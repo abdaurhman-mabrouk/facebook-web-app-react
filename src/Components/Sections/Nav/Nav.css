@@ -1,0 +1,414 @@
+nav {
+  /* min-width: min-content;
+  min-height: min-content; */
+  width: 100%;
+  height: 50px;
+  max-width: 100%;
+  max-height: 50px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}
+
+nav span {
+  max-height: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+nav span a {
+  vertical-align: middle;
+}
+
+nav span.right {
+}
+
+nav span.right a.navbar-icon-link {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e6eb;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+nav span.right a.active {
+}
+
+/* nav span.right a.active:hover {
+  background-color: unset !important;
+} */
+
+nav span.right a.active svg path {
+  fill: #0866ff !important;
+}
+
+div#userMenuDiv {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  min-width: 360px;
+  max-width: 360px;
+  min-height: 580px;
+  max-height: 580px;
+  display: none;
+  background-color: #fff;
+  border-radius: 12px;
+  /* border: 1px solid #000; */
+  /* box-shadow: 0px 0px 3px 1px #000; */
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+div#pageSwitcherDiv {
+  min-width: 92%;
+  max-width: 92%;
+  height: fit-content;
+  margin: 3% auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+div#pageSwitcherDiv hr {
+  width: 90%;
+  margin: 2px auto;
+}
+
+a.page-switcher-link {
+  display: inline-block;
+  width: 98%;
+  height: fit-content;
+  margin: 2px auto;
+  padding: 3% 3%;
+  text-align: left;
+  /*border: 1px solid #000;
+  */
+  border-radius: 10px;
+}
+
+a.page-switcher-link:hover {
+  background-color: #e4e6eb;
+}
+
+a.page-switcher-link div img {
+  margin-right: 5px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+a.page-switcher-link#showAllProfiles {
+  min-width: fit-content;
+  max-width: 90%;
+  width: 90%;
+  height: fit-content;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2.8% 10px;
+  margin: 5px 0;
+  border-radius: 7px;
+  background-color: #e4e6eb;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+a.page-switcher-link#showAllProfiles i {
+  background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/yT/r/XjnAqEDt36c.png?_nc_eui2=AeFV5-0UUNhJgmjhel54OxaAsSkqQ-oXvMOxKSpD6he8wwuUm_R6C6CYrf_hfm_E4uBYjnaggcy1lkxUteCtlvc6');
+  background-position: 0px -361px;
+  background-size: auto;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+a.page-switcher-link#showAllProfiles * {
+  vertical-align: middle;
+}
+
+a.page-switcher-link div {
+}
+
+a.page-switcher-link div * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div#userMenuLinks {
+  min-width: 92%;
+  max-width: 92%;
+  width: 92%;
+  height: 300px;
+  margin: 10px auto;
+  padding: 5px 0px 5px 10px;
+  justify-content: left;
+  text-align: left;
+  border: 1px solid #000;
+}
+
+div#userMenuLinks a {
+  justify-content: left;
+  min-width: 100%;
+  min-height: 120px;
+  font-size: 20px;
+  margin: 10px auto !important;
+  /* margin-bottom: 5px; */
+  padding: 1px;
+  border: 1px solid #000;
+}
+
+div#userMenuLinks a:hover {
+  background-color: #c9ccd1;
+}
+
+div#userMenuLinks a * {
+  vertical-align: middle;
+}
+
+div#userMenuLinks a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  outline: 8px solid #c9ccd1;
+  border-radius: 100%;
+  background-color: #c9ccd1;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+a#userImageLink {
+  padding: 0;
+}
+
+div#notificationsDiv {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  width: 330px;
+  height: 450px;
+  padding-left: 10px;
+  display: none;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+div#messagesDiv {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  width: 330px;
+  height: 600px;
+  padding-left: 10px;
+  display: none;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+nav span.center {
+  max-width: 40%;
+  width: 40%;
+  margin-right: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav span.center a {
+  height: 90%;
+  width: 16%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav span.center a:hover {
+  background-color: #f0f2f5;
+}
+
+nav span.center a.active {
+  border-bottom: 4px solid #0866ff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #0866ff;
+}
+
+nav span.center a.active:hover {
+  background-color: unset !important;
+}
+
+nav span.center a.active svg path {
+  fill: #0866ff;
+}
+
+nav span.left {
+}
+
+div#searchBarDiv {
+  width: 240px;
+  height: 80%;
+  margin-left: 15px;
+  padding: 0;
+  border-radius: 40px;
+  background-color: #f0f2f5;
+}
+
+nav span.left input[type='text'] {
+  width: 200px;
+  height: 100%;
+  margin-left: 1px;
+  padding: 5px 10px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 30px;
+  background-color: #f0f2f5;
+}
+
+nav span.left input[type='text']::placeholder {
+  /* font-style: italic; */
+}
+
+nav span.left input[type='text']:focus {
+  outline: none;
+}
+
+svg#searchMark {
+  /* float: right; */
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  vertical-align: middle;
+  color: #65686c;
+  /* border: 1px solid #000; */
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+img#facebookLogo {
+  width: 39px;
+  height: 39px;
+}
+
+/*When ViewPort == 1260px */
+@media only screen and (max-width: 1260px) {
+  nav span.left img#facebookLogo {
+    width: 40px;
+    height: 40px;
+  }
+
+  nav span.left div#searchBarDiv {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+    /* vertical-align: middle; */
+  }
+
+  nav span.left input#searchBar {
+    display: none;
+  }
+
+  nav span.left div svg#searchMark {
+    vertical-align: middle;
+    /* margin: auto; */
+  }
+
+  nav span.center {
+    margin-left: 110px;
+  }
+}
+
+/* When ViewPort == 1100px */
+@media only screen and (max-width: 1100px) {
+}
+
+/* When ViewPort == 900*/
+@media only screen and (max-width: 900px) {
+}
+
+@media (max-width: 768px) {
+  nav span.center {
+    display: none;
+  }
+
+  div#searchBarDiv {
+    width: 180px;
+  }
+
+  nav span.left input[type='text'] {
+    width: 140px;
+  }
+}
+
+/* When ViewPort == 700px*/
+@media only screen and (max-width: 700px) {
+  nav span.center {
+    display: none;
+  }
+}
+
+/* When ViewPort == 500px*/
+@media only screen and (max-width: 500px) {
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  div#searchBarDiv {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  nav span.left input[type='text'] {
+    width: 100%;
+  }
+}
