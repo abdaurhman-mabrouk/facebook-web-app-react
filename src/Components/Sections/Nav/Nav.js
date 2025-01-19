@@ -167,7 +167,7 @@ function Nav() {
         {/* <!-- Messages Hidden Relative Div --> */}
         <div
           id="messagesDiv"
-          className="nav-menu-div"
+          className="messages-menu-div nav-menu-div"
           style={{ display: 'none' }}>
           {' '}
           {/* Hidden Div */}
@@ -222,7 +222,7 @@ function Nav() {
 
         <div
           id="notificationsDiv"
-          className="nav-menu-div"
+          className="nav-menu-div nav-menu-div"
           style={{ display: 'none' }}>
           {' '}
           {/* Hidden Div */}
@@ -266,7 +266,7 @@ function Nav() {
         {/*User Menu Hidden Relative Div */}
         <div
           id="userMenuDiv"
-          className="nav-menu-div"
+          className="nav-menu-div nav-menu-div"
           style={{ display: 'none' }}>
           {' '}
           {/* Hidden Div */}

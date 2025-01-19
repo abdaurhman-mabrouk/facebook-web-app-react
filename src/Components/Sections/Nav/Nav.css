@@ -431,6 +431,16 @@ img#facebookLogo {
     max-height: 85vh !important;
     overflow-y: scroll;
   }
+
+  div.nav-menu-div {
+    min-width: 90vw !important;
+    min-height: 85vh !important;
+    width: 90vw !important;
+    height: 90vh !important;
+    max-width: 90vw !important;
+    max-height: 85vh !important;
+    overflow-y: scroll;
+  }
 }
 
 /* When ViewPort == 500px*/
