@@ -315,11 +315,13 @@ function Nav() {
           </div>
           <div id="userMenuLinks">
             <a href="#">
-              <img src={settings_image} alt="Settings_Image" />
+              <span>
+                <img src={settings_image} alt="Settings_Image" />
+              </span>
               Settings and Pravicy
               <i
-                data-visualcompletion="css-img"
-                aria-hidden="true"
+                dataVisualcompletion="css-img"
+                ariaHidden="true"
                 style={{
                   backgroundImage:
                     "url('https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/Y8kZSY8iBwN.png?_nc_eui2=AeHQJ2ve52vvXNI0EzYkUZY86WlMCfHoRYbpaUwJ8ehFhjMmjoXS0SgXGzThtYH9E2Y1eRUIbCwG7Kjnn_1SJZFz')",
@@ -335,7 +337,9 @@ function Nav() {
             <br />
 
             <a href="#">
-              <img src={question_image} alt="Question_Image" />
+              <span>
+                <img src={question_image} alt="Question_Image" />
+              </span>
               Help and Support
               <i
                 data-visualcompletion="css-img"
@@ -355,7 +359,9 @@ function Nav() {
             <br />
 
             <a href="#">
-              <img src={dark_mood_image} alt="DarkMode_Image" />
+              <span>
+                <img src={dark_mood_image} alt="DarkMode_Image" />
+              </span>
               Display &amp; Accessibility
               <i
                 data-visualcompletion="css-img"
@@ -375,16 +381,41 @@ function Nav() {
             <br />
 
             <a href="#">
-              <img src={feedback_image} alt="Feedback Mark" />
+              <span>
+                <img src={feedback_image} alt="Feedback Mark" />
+              </span>
               Give feedback
             </a>
 
             <br />
 
             <a href="#">
-              <img src={logout_image} alt="Logout Mark" />
+              <span>
+                <img src={logout_image} alt="Logout Mark" />
+              </span>
               Logout
             </a>
+          </div>
+          <div id="userMenuFooter">
+            <a href="#">Privacy</a>.<a href="#">Terms</a>.
+            <a href="#">Advertising</a>.
+            <a href="#">
+              Ad Choices
+              <i
+                dataVisualcompletion="css-img"
+                style={{
+                  backgroundImage:
+                    "url('https://static.xx.fbcdn.net/rsrc.php/v4/yF/r/0eMCd-xV6jA.png?_nc_eui2=AeH2ZSJ4HAVrXCAMG3w6x0wr4T6XM-SUMv7hPpcz5JQy_u2lTgcp7PwbhkRB523uANYDIq-JUK6on1eH1hLMEmdU')",
+                  backgroundPosition: '0px -147px',
+                  backgroundSize: 'auto',
+                  width: '12px',
+                  height: '12px',
+                  backgroundRepeat: 'no-repeat',
+                  display: 'inline-block',
+                }}></i>
+            </a>
+            .<a href="#">Cookies</a>.<a href="#">More</a>.
+            <a href="#">Meta © 2025</a>.
           </div>
         </div>
       </span>
