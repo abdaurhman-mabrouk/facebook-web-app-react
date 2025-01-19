@@ -37,31 +37,68 @@ function Nav() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   useEffect(() => {
-    const searchDiv = document.getElementById('searchDiv');
+    const searchBarDiv = document.getElementById('searchBarDiv');
+    const facebookLogo = document.getElementById('facebookLogo');
+    const backAorrowSvg = document.getElementById('backAorrowSvg');
+
+    const searchResultsDiv = document.getElementById('searchResultsDiv');
     if (isSearchFocused) {
-      searchDiv.style.display = 'block';
+      facebookLogo.style.display = 'none';
+      backAorrowSvg.style.display = 'block';
+      searchResultsDiv.style.display = 'block';
     } else {
-      searchDiv.style.display = 'none';
+      searchResultsDiv.style.display = 'none';
     }
   }, [isSearchFocused]);
 
   const handleSearchFocus = () => {
-    setIsSearchFocused(true);
+    if (isSearchFocused === false) {
+      setIsSearchFocused(true);
+    } else {
+      setIsSearchFocused(false);
+    }
   };
 
-  const handleSearchBlur = () => {
-    setIsSearchFocused(false);
-  };
+  // const handleSearchBlur = () => {
+  //   setIsSearchFocused(false);
+  // };
 
   return (
     <nav>
       <span className="left">
         <a href="#">
           <img src={facebook_logo} alt="Facebook Logo" id="facebookLogo" />
+
+          {/*Hidden BackAorrowSvg Show When Focus on Search input*/}
+          <svg
+            viewBox="0 0 20 20"
+            width="20"
+            height="20"
+            fill="currentColor"
+            id="backAorrowSvg"
+            style={{ display: 'none' }}>
+            <g fill-rule="evenodd" transform="translate(-446 -350)">
+              <g fill-rule="nonzero">
+                <path
+                  d="M100.249 201.999a1 1 0 0 0-1.415-1.415l-5.208 5.209a1 1 0 0 0 0 1.414l5.208 5.209A1 1 0 0 0 100.25 211l-4.501-4.501 4.5-4.501z"
+                  transform="translate(355 153.5)"></path>
+                <path
+                  d="M107.666 205.5H94.855a1 1 0 1 0 0 2h12.813a1 1 0 1 0 0-2z"
+                  transform="translate(355 153.5)"></path>
+              </g>
+            </g>
+          </svg>
         </a>
 
         <div id="searchBarDiv">
-          <input type="text" id="searchBar" placeholder="Search in Facebook" />
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Search in Facebook"
+            onFocus={() => {
+              handleSearchFocus();
+            }}
+          />
           <svg viewBox="0 0 16 16" width="16" height="16" id="searchMark">
             <g fillRule="evenodd" transform="translate(-448 -544)">
               <g fillRule="nonzero">
@@ -80,18 +117,21 @@ function Nav() {
               </g>
             </g>
           </svg>
-        </div>
 
-        {/* <!-- Search Hidden Relative Div --> */}
-        <div id="searchDiv" style={{ display: 'none' }}>
-          <a href="#">
-            <img src={user_image} className="userImg" alt="User_Image" />
-            <span>Search Result</span>
-          </a>
-          <a href="#">
-            <img src={user_image} className="userImg" alt="User_Image" />
-            <span>Search Result</span>
-          </a>
+          {/* <!-- Search Hidden Relative Div --> */}
+          <div
+            id="searchResultsDiv"
+            className={isSearchFocused === true ? 'active' : 'idle'}
+            style={{ display: 'none' }}>
+            <a href="#">
+              <img src={user_image} className="userImg" alt="User_Image" />
+              <span>Search Result</span>
+            </a>
+            <a href="#">
+              <img src={user_image} className="userImg" alt="User_Image" />
+              <span>Search Result</span>
+            </a>
+          </div>
         </div>
       </span>
 
@@ -320,8 +360,8 @@ function Nav() {
               </span>
               Settings and Pravicy
               <i
-                dataVisualcompletion="css-img"
-                ariaHidden="true"
+                data-visualcompletion="css-img"
+                aria-hidden="true"
                 style={{
                   backgroundImage:
                     "url('https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/Y8kZSY8iBwN.png?_nc_eui2=AeHQJ2ve52vvXNI0EzYkUZY86WlMCfHoRYbpaUwJ8ehFhjMmjoXS0SgXGzThtYH9E2Y1eRUIbCwG7Kjnn_1SJZFz')",
@@ -402,7 +442,7 @@ function Nav() {
             <a href="#">
               Ad Choices
               <i
-                dataVisualcompletion="css-img"
+                data-visualcompletion="css-img"
                 style={{
                   backgroundImage:
                     "url('https://static.xx.fbcdn.net/rsrc.php/v4/yF/r/0eMCd-xV6jA.png?_nc_eui2=AeH2ZSJ4HAVrXCAMG3w6x0wr4T6XM-SUMv7hPpcz5JQy_u2lTgcp7PwbhkRB523uANYDIq-JUK6on1eH1hLMEmdU')",

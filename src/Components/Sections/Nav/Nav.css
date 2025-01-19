@@ -323,7 +323,7 @@ div#searchBarDiv {
   background-color: #f0f2f5;
 }
 
-nav span.left input[type='text'] {
+div#searchBarDiv input[type='text'] {
   width: 200px;
   height: 100%;
   margin-left: 1px;
@@ -334,15 +334,15 @@ nav span.left input[type='text'] {
   background-color: #f0f2f5;
 }
 
-nav span.left input[type='text']::placeholder {
+div#searchBarDiv input[type='text']::placeholder {
   /* font-style: italic; */
 }
 
-nav span.left input[type='text']:focus {
+div#searchBarDiv input[type='text']:focus {
   outline: none;
 }
 
-svg#searchMark {
+div#searchBarDiv svg#searchMark {
   /* float: right; */
   width: 20px;
   height: 20px;
@@ -355,6 +355,18 @@ svg#searchMark {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+}
+
+div#searchResultsDiv.active {
+  display: block !important;
+  position: absolute;
+  left: 2px;
+  top: 6%;
+  width: 18vw;
+  height: 60vh;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 
 img#facebookLogo {

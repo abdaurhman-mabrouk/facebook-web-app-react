@@ -1,0 +1,51 @@
+div#searchBarDiv {
+  width: 240px;
+  height: 80%;
+  margin-left: 15px;
+  padding: 0;
+  border-radius: 40px;
+  background-color: #f0f2f5;
+}
+
+div#searchBarDiv input[type='text'] {
+  width: 200px;
+  height: 100%;
+  margin-left: 1px;
+  padding: 5px 10px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 30px;
+  background-color: #f0f2f5;
+}
+
+div#searchBarDiv input[type='text']::placeholder {
+  /* font-style: italic; */
+}
+
+div#searchBarDiv input[type='text']:focus {
+  outline: none;
+}
+
+div#searchBarDiv svg#searchMark {
+  /* float: right; */
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  vertical-align: middle;
+  color: #65686c;
+  /* border: 1px solid #000; */
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+div#searchResultsDiv {
+  position: absolute;
+  left: 0;
+  top: 1%;
+  width: 30vw;
+  height: 50vh;
+  border: 1px solid #000;
+}
