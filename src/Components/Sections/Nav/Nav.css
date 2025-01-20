@@ -1,6 +1,6 @@
 nav {
-  /* min-width: min-content;
-  min-height: min-content; */
+  min-width: 100%;
+  min-height: 50px;
   width: 100%;
   height: 50px;
   max-width: 100%;
@@ -10,21 +10,25 @@ nav {
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav span {
+  display: inline;
   max-height: 100%;
   height: 100%;
-  display: flex;
   align-items: center;
   vertical-align: middle;
 }
 
 nav span a {
+  display: inline !important;
   vertical-align: middle;
 }
 
 nav span.right {
+  display: flex;
+  float: right;
 }
 
 nav span.right a.navbar-icon-link {
@@ -63,7 +67,7 @@ div#userMenuDiv {
   background-color: #fff;
   border-radius: 10px;
   /*border: 1px solid #000;*/
-  box-shadow: 0px 0px 3px 1px #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 div#pageSwitcherDiv {
@@ -272,24 +276,26 @@ div#messagesDiv {
 }
 
 nav span.center {
+  display: flex;
   max-width: 40%;
   width: 40%;
+  height: 100%;
   margin-right: 100px;
   justify-content: space-evenly;
   align-items: center;
 }
 
 nav span.center a {
+  display: flex;
   height: 90%;
   width: 16%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  vertical-align: middle;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+}
+
+nav span.center a svg {
+  display: flex;
+  margin: 10% auto;
 }
 
 nav span.center a:hover {
@@ -312,6 +318,7 @@ nav span.center a.active svg path {
 }
 
 nav span.left {
+  float: left;
   width: fit-content;
 }
 
@@ -369,8 +376,9 @@ div#searchBarDiv svg#searchMark {
 
 div#searchResultsDiv {
   display: block;
+  max-width: 100%;
   justify-content: left;
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
 }
 
 div#searchResultsDiv a {

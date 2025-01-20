@@ -37,7 +37,9 @@ function Nav() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   useEffect(() => {
+    // const nav = document.querySelector('nav');
     const navSpanLeft = document.querySelector('nav span.left');
+    const leftPlaceholder = document.getElementById('leftPlaceholder');
     const searchBarParentDiv = document.querySelector('div.left');
     const searchBarDiv = document.getElementById('searchBarDiv');
     const searchInput = document.querySelector('input#searchBar');
@@ -47,6 +49,10 @@ function Nav() {
     const searchResultsDiv = document.getElementById('searchResultsDiv');
 
     if (isSearchFocused) {
+      leftPlaceholder.style.display = 'block';
+      leftPlaceholder.style.width = navSpanLeft.offsetWidth + 'px';
+      leftPlaceholder.style.height = navSpanLeft.offsetHeight + 'px';
+
       facebookLogo.style.display = 'none';
       searchMarkSvg.style.display = 'none';
       backArrowSvg.style.display = 'block';
@@ -96,6 +102,7 @@ function Nav() {
       facebookLogo.style.display = 'block';
       searchMarkSvg.style.display = 'inline';
       backArrowSvg.style.display = 'none';
+      leftPlaceholder.style.display = 'none';
 
       Object.assign(navSpanLeft.style, {
         position: '',
@@ -150,6 +157,9 @@ function Nav() {
 
   return (
     <nav>
+      {/* a Hidden Placeholder Div for take (Nav > span.left) when its Display switch to none*/}
+      <div id="leftPlaceholder" style={{ display: 'none' }}></div>
+
       <span className="left">
         <div className="left">
           <a href="#">
