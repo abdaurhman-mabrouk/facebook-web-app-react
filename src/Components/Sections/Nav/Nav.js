@@ -37,101 +37,191 @@ function Nav() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   useEffect(() => {
+    const navSpanLeft = document.querySelector('nav span.left');
+    const searchBarParentDiv = document.querySelector('div.left');
     const searchBarDiv = document.getElementById('searchBarDiv');
+    const searchInput = document.querySelector('input#searchBar');
+    const searchMarkSvg = document.querySelector('svg#searchMark');
     const facebookLogo = document.getElementById('facebookLogo');
-    const backAorrowSvg = document.getElementById('backAorrowSvg');
-
+    const backArrowSvg = document.getElementById('backAorrowSvg');
     const searchResultsDiv = document.getElementById('searchResultsDiv');
+
     if (isSearchFocused) {
       facebookLogo.style.display = 'none';
-      backAorrowSvg.style.display = 'block';
+      searchMarkSvg.style.display = 'none';
+      backArrowSvg.style.display = 'block';
+
+      Object.assign(navSpanLeft.style, {
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        minWidth: '18vw',
+        maxWidth: '18vw',
+        width: '18vw',
+        height: '60vh',
+        minHeight: '60vh',
+        maxHeight: '60vh',
+        alignItems: 'unset',
+        backgroundColor: '#fff',
+        border: 'none',
+        // borderWidth: '1px',
+        // borderStyle: 'solid',
+        // borderColor: '#000',
+        borderRadius: '8px',
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.4)',
+      });
+
+      Object.assign(searchBarParentDiv.style, {
+        width: '100%',
+        height: '60px',
+        padding: '0',
+        margin: '0',
+      });
+
+      Object.assign(searchBarDiv.style, {
+        width: '80%',
+        height: '80%',
+      });
+
+      Object.assign(searchInput.style, {
+        width: '100%',
+        height: '100%',
+        margin: '0',
+        borderRadius: '100%',
+      });
+
       searchResultsDiv.style.display = 'block';
     } else {
       searchResultsDiv.style.display = 'none';
+      facebookLogo.style.display = 'block';
+      searchMarkSvg.style.display = 'inline';
+      backArrowSvg.style.display = 'none';
+
+      Object.assign(navSpanLeft.style, {
+        position: '',
+        top: '',
+        left: '',
+        minWidth: '',
+        maxWidth: '',
+        width: '',
+        height: '',
+        minHeight: '',
+        maxHeight: '',
+        alignItems: '',
+        backgroundColor: '',
+        borderWidth: '',
+        borderStyle: '',
+        borderColor: '',
+        boxShadow: 'unset',
+      });
+
+      Object.assign(searchBarParentDiv.style, {
+        width: '',
+        height: '',
+        padding: '',
+        margin: '',
+      });
+
+      Object.assign(searchBarDiv.style, {
+        width: '',
+        height: '',
+      });
+
+      Object.assign(searchInput.style, {
+        width: '',
+        height: '',
+        margin: '',
+        borderRadius: '',
+      });
+
+      Object.assign(searchResultsDiv.style, {
+        display: 'none',
+      });
     }
   }, [isSearchFocused]);
 
   const handleSearchFocus = () => {
-    if (isSearchFocused === false) {
-      setIsSearchFocused(true);
-    } else {
-      setIsSearchFocused(false);
-    }
+    setIsSearchFocused(true);
   };
 
-  // const handleSearchBlur = () => {
-  //   setIsSearchFocused(false);
-  // };
+  const handleSearchBlur = () => {
+    setIsSearchFocused(false);
+  };
 
   return (
     <nav>
       <span className="left">
-        <a href="#">
-          <img src={facebook_logo} alt="Facebook Logo" id="facebookLogo" />
+        <div className="left">
+          <a href="#">
+            <img src={facebook_logo} alt="Facebook Logo" id="facebookLogo" />
 
-          {/*Hidden BackAorrowSvg Show When Focus on Search input*/}
-          <svg
-            viewBox="0 0 20 20"
-            width="20"
-            height="20"
-            fill="currentColor"
-            id="backAorrowSvg"
-            style={{ display: 'none' }}>
-            <g fill-rule="evenodd" transform="translate(-446 -350)">
-              <g fill-rule="nonzero">
-                <path
-                  d="M100.249 201.999a1 1 0 0 0-1.415-1.415l-5.208 5.209a1 1 0 0 0 0 1.414l5.208 5.209A1 1 0 0 0 100.25 211l-4.501-4.501 4.5-4.501z"
-                  transform="translate(355 153.5)"></path>
-                <path
-                  d="M107.666 205.5H94.855a1 1 0 1 0 0 2h12.813a1 1 0 1 0 0-2z"
-                  transform="translate(355 153.5)"></path>
+            {/*Hidden BackAorrowSvg Show When Focus on Search input*/}
+            <svg
+              viewBox="0 0 20 20"
+              width="20"
+              height="20"
+              fill="currentColor"
+              id="backAorrowSvg"
+              style={{ display: 'none' }}>
+              <g fillRule="evenodd" transform="translate(-446 -350)">
+                <g fillRule="nonzero">
+                  <path
+                    d="M100.249 201.999a1 1 0 0 0-1.415-1.415l-5.208 5.209a1 1 0 0 0 0 1.414l5.208 5.209A1 1 0 0 0 100.25 211l-4.501-4.501 4.5-4.501z"
+                    transform="translate(355 153.5)"></path>
+                  <path
+                    d="M107.666 205.5H94.855a1 1 0 1 0 0 2h12.813a1 1 0 1 0 0-2z"
+                    transform="translate(355 153.5)"></path>
+                </g>
               </g>
-            </g>
-          </svg>
-        </a>
+            </svg>
+          </a>
 
-        <div id="searchBarDiv">
-          <input
-            type="text"
-            id="searchBar"
-            placeholder="Search in Facebook"
-            onFocus={() => {
-              handleSearchFocus();
-            }}
-          />
-          <svg viewBox="0 0 16 16" width="16" height="16" id="searchMark">
-            <g fillRule="evenodd" transform="translate(-448 -544)">
-              <g fillRule="nonzero">
-                <path
-                  d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
-                  transform="translate(448 544)"></path>
-                <path
-                  d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
-                  transform="translate(448 544)"></path>
-                <path
-                  d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
-                  transform="translate(448 544)"></path>
-                <path
-                  d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
-                  transform="translate(448 544)"></path>
+          <div id="searchBarDiv">
+            <input
+              type="text"
+              id="searchBar"
+              placeholder="Search in Facebook"
+              onFocus={() => {
+                handleSearchFocus();
+              }}
+              onBlur={() => {
+                handleSearchBlur();
+              }}
+            />
+            <svg viewBox="0 0 16 16" width="16" height="16" id="searchMark">
+              <g fillRule="evenodd" transform="translate(-448 -544)">
+                <g fillRule="nonzero">
+                  <path
+                    d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                    transform="translate(448 544)"></path>
+                  <path
+                    d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                    transform="translate(448 544)"></path>
+                  <path
+                    d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                    transform="translate(448 544)"></path>
+                  <path
+                    d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                    transform="translate(448 544)"></path>
+                </g>
               </g>
-            </g>
-          </svg>
-
-          {/* <!-- Search Hidden Relative Div --> */}
-          <div
-            id="searchResultsDiv"
-            className={isSearchFocused === true ? 'active' : 'idle'}
-            style={{ display: 'none' }}>
-            <a href="#">
-              <img src={user_image} className="userImg" alt="User_Image" />
-              <span>Search Result</span>
-            </a>
-            <a href="#">
-              <img src={user_image} className="userImg" alt="User_Image" />
-              <span>Search Result</span>
-            </a>
+            </svg>
           </div>
+        </div>
+
+        {/* <!-- Search Results Section
+                 Maximize onFocus
+                 Resize onBlur
+              -->
+        */}
+        <div id="searchResultsDiv" style={{ display: 'none' }}>
+          <a href="#" className="result-link">
+            <span className="result-image">
+              <img src={user_image} alt="Result" />
+            </span>
+
+            <span className="result-text">Result</span>
+          </a>
         </div>
       </span>
 

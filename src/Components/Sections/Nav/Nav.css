@@ -312,6 +312,16 @@ nav span.center a.active svg path {
 }
 
 nav span.left {
+  width: fit-content;
+}
+
+nav span.left div.left {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 div#searchBarDiv {
@@ -324,7 +334,7 @@ div#searchBarDiv {
 }
 
 div#searchBarDiv input[type='text'] {
-  width: 200px;
+  width: 88%;
   height: 100%;
   margin-left: 1px;
   padding: 5px 10px;
@@ -357,16 +367,19 @@ div#searchBarDiv svg#searchMark {
   -o-border-radius: 100%;
 }
 
-div#searchResultsDiv.active {
-  display: block !important;
-  position: absolute;
-  left: 2px;
-  top: 6%;
-  width: 18vw;
-  height: 60vh;
-  margin: 0;
-  background-color: #fff;
-  border: 1px solid #000;
+div#searchResultsDiv {
+  display: block;
+  justify-content: left;
+  /* border: 1px solid #000; */
+}
+
+div#searchResultsDiv a {
+}
+
+div#searchResultsDiv a span.result-image {
+}
+
+div#searchResultsDiv a span.result-text {
 }
 
 img#facebookLogo {
