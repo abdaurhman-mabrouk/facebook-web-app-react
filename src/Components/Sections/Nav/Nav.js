@@ -45,7 +45,7 @@ function Nav() {
     const searchInput = document.querySelector('input#searchBar');
     const searchMarkSvg = document.querySelector('svg#searchMark');
     const facebookLogo = document.getElementById('facebookLogo');
-    const backArrowSvg = document.getElementById('backAorrowSvg');
+    const backArrowSvg = document.getElementById('backArrowSvg');
     const searchResultsDiv = document.getElementById('searchResultsDiv');
 
     if (isSearchFocused) {
@@ -165,13 +165,13 @@ function Nav() {
           <a href="#">
             <img src={facebook_logo} alt="Facebook Logo" id="facebookLogo" />
 
-            {/*Hidden BackAorrowSvg Show When Focus on Search input*/}
+            {/*Hidden BackArrowSvg Show When Focus on Search input*/}
             <svg
               viewBox="0 0 20 20"
               width="20"
               height="20"
               fill="currentColor"
-              id="backAorrowSvg"
+              id="backArrowSvg"
               style={{ display: 'none' }}>
               <g fillRule="evenodd" transform="translate(-446 -350)">
                 <g fillRule="nonzero">
@@ -406,59 +406,59 @@ function Nav() {
         {/*User Menu Hidden Relative Div */}
         <div
           id="userMenuDiv"
-          className="nav-menu-div nav-menu-div"
+          className="nav-menu-div nav-user-menu-div"
           style={{ display: 'none' }}>
-          {' '}
           {/* Hidden Div */}
           <div id="pageSwitcherDiv">
-            <a href="#" className="page-switcher-link">
-              <div>
+            <div className="current-page">
+              <a href="#" className="page-switcher-link current-page">
                 <img
                   src={user_image}
-                  className="page-switcher-image userImg"
+                  className="page-switcher-image userImg other-page"
                   alt="User_Image"
                 />
-                Your Profile
-              </div>
-            </a>
+                <p className="page-switcher-link-text">Your Profile</p>
+              </a>
+            </div>
 
             <hr />
 
-            <a href="#" className="page-switcher-link">
-              <div>
+            <div className="other-page">
+              <a href="#" className="page-switcher-link other-page">
                 <img
                   src={user_image}
-                  className="page-switcher-image userImg"
+                  className="page-switcher-image userImg other-page"
                   alt="User_Image"
                 />
-                Your Profile
-              </div>
-            </a>
+                <p className="page-switcher-link-text">Your Profile</p>
+              </a>
 
-            <a href="#" className="page-switcher-link">
-              <div>
+              <a href="#" className="page-switcher-link other-page">
                 <img
                   src={user_image}
-                  className="page-switcher-image userImg"
+                  className="page-switcher-image userImg other-page"
                   alt="User_Image"
                 />
-                Your Profile
-              </div>
-            </a>
+                <p className="page-switcher-link-text">Your Profile</p>
+              </a>
+            </div>
 
             <hr />
 
-            <a href="#" id="showAllProfiles" className="page-switcher-link">
-              <i data-visualcompletion="css-img" aria-hidden="true"></i>
-              Show All Profiles
-            </a>
+            <div className="show-all-profiles-div">
+              <a href="#" id="showAllProfiles" className="page-switcher-link">
+                <i data-visualcompletion="css-img" aria-hidden="true"></i>
+                Show All Profiles
+              </a>
+            </div>
           </div>
+
           <div id="userMenuLinks">
             <a href="#">
-              <span>
+              <i>
                 <img src={settings_image} alt="Settings_Image" />
-              </span>
-              Settings and Pravicy
+              </i>
+              Settings and Privacy
               <i
                 data-visualcompletion="css-img"
                 aria-hidden="true"
@@ -470,7 +470,7 @@ function Nav() {
                   width: '24px',
                   height: '24px',
                   backgroundRepeat: 'no-repeat',
-                  display: 'inline-block',
+                  display: 'inline',
                 }}></i>
             </a>
 
@@ -492,7 +492,7 @@ function Nav() {
                   width: '24px',
                   height: '24px',
                   backgroundRepeat: 'no-repeat',
-                  display: 'inline-block',
+                  display: 'inline',
                 }}></i>
             </a>
 
@@ -514,7 +514,7 @@ function Nav() {
                   width: '24px',
                   height: '24px',
                   backgroundRepeat: 'no-repeat',
-                  display: 'inline-block',
+                  display: 'inline',
                 }}></i>
             </a>
 
