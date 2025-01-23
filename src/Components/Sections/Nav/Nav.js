@@ -12,7 +12,6 @@ import logout_image from '../../../assets/images/logout-mark.png';
 function Nav() {
   // *Toggling Navbar Div Sections Logic
   const [activeNavBarDiv, setActiveNavBarDiv] = useState('');
-
   useEffect(() => {
     // Hide all nav menu divs
     document.querySelectorAll('div.nav-menu-div').forEach((div) => {
@@ -27,15 +26,14 @@ function Nav() {
       }
     }
   }, [activeNavBarDiv]);
-
   const handleNavBarDivClick = (div) => {
     // Toggle the active nav menu div
     setActiveNavBarDiv((prevDiv) => (prevDiv === div ? '' : div));
   };
 
+  
   // *Toggling Search Input Div Logic
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-
   useEffect(() => {
     // const nav = document.querySelector('nav');
     const navSpanLeft = document.querySelector('nav span.left');
@@ -146,11 +144,9 @@ function Nav() {
       });
     }
   }, [isSearchFocused]);
-
   const handleSearchFocus = () => {
     setIsSearchFocused(true);
   };
-
   const handleSearchBlur = () => {
     setIsSearchFocused(false);
   };
@@ -455,7 +451,7 @@ function Nav() {
 
           <div id="userMenuLinks">
             <a href="#">
-              <i>
+              <i className="image-border-i">
                 <img src={settings_image} alt="Settings_Image" />
               </i>
               Settings and Privacy
@@ -477,9 +473,9 @@ function Nav() {
             <br />
 
             <a href="#">
-              <span>
+              <i className="image-border-i">
                 <img src={question_image} alt="Question_Image" />
-              </span>
+              </i>
               Help and Support
               <i
                 data-visualcompletion="css-img"
@@ -499,9 +495,9 @@ function Nav() {
             <br />
 
             <a href="#">
-              <span>
+              <i className="image-border-i">
                 <img src={dark_mood_image} alt="DarkMode_Image" />
-              </span>
+              </i>
               Display &amp; Accessibility
               <i
                 data-visualcompletion="css-img"
@@ -521,18 +517,18 @@ function Nav() {
             <br />
 
             <a href="#">
-              <span>
+              <i className="image-border-i">
                 <img src={feedback_image} alt="Feedback Mark" />
-              </span>
+              </i>
               Give feedback
             </a>
 
             <br />
 
             <a href="#">
-              <span>
+              <i className="image-border-i">
                 <img src={logout_image} alt="Logout Mark" />
-              </span>
+              </i>
               Logout
             </a>
           </div>
