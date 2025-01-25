@@ -50,7 +50,7 @@ main#home span.center {
   border: 1px solid #000;
 }
 
-span.right {
+main#home span.right {
   max-height: 100%;
   height: 100%;
   max-width: 30%;
