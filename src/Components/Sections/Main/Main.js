@@ -1,5 +1,7 @@
 import React from 'react';
 import './Main.css';
+
+// import needed images
 import user_image from '../../../assets/images/user.png';
 import colored_friends_mark from '../../../assets/images/colored-friends-mark.png';
 import colored_statistics_mark from '../../../assets/images/colored-statistics-mark.png';
@@ -25,7 +27,7 @@ function Main() {
     <>
       <main id="home">
         <span className="left">
-          <div>
+          <div className="">
             <a href="." className="userLink">
               <img
                 src={user_image}
@@ -33,46 +35,46 @@ function Main() {
                 id="leftUserImage"
                 className="userImage"
               />
-              Your Profile
+              <p>Your Profile</p>
             </a>
 
             <a href=".">
-              <img src={colored_friends_mark} alt="" /> Friends
+              <img src={colored_friends_mark} alt="" /> <p>Friends</p>
             </a>
 
             <a href=".">
               <img src={colored_statistics_mark} alt="" />
-              Professional Dashboard
+              <p>Professional Dashboard</p>
             </a>
 
             <a href=".">
               <img src={colored_timeline_mark} alt="" />
-              Feed
+              <p>Feed</p>
             </a>
 
             <a href=".">
               <img src={colored_groups_mark} alt="" />
-              Groups
+              <p>Groups</p>
             </a>
 
             <a href=".">
               <img src={colored_marketplace_mark} alt="" />
-              MarketPlace
+              <p>MarketPlace</p>
             </a>
 
             <a href=".">
               <img src={colored_videos_mark} alt="" />
-              Videos
+              <p>Videos</p>
             </a>
 
             <a href=".">
               <img src={colored_history_mark} alt="" />
-              Memories
+              <p>Memories</p>
             </a>
 
             <a href=".">
               <img src={colored_save_mark} alt="" />
-              Saved
+              <p>Saved</p>
             </a>
 
             <a href=".">
@@ -90,7 +92,7 @@ function Main() {
                   </g>
                 </svg>
               </span>
-              Show More
+              <p>Show More</p>
             </a>
 
             <hr />
@@ -100,7 +102,7 @@ function Main() {
 
               <a href="." className="userLink">
                 <img src={user_image} alt="Page" className="userImg" />
-                Page
+                <p>Page</p>
               </a>
             </div>
           </div>
