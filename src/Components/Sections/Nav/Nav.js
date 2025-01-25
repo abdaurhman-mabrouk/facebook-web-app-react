@@ -31,7 +31,6 @@ function Nav() {
     setActiveNavBarDiv((prevDiv) => (prevDiv === div ? '' : div));
   };
 
-  
   // *Toggling Search Input Div Logic
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   useEffect(() => {
@@ -355,7 +354,6 @@ function Nav() {
           </svg>
         </a>
         {/* <!-- Notifications Hidden Relative Div --> */}
-
         <div
           id="notificationsDiv"
           className="nav-menu-div nav-menu-div"
@@ -397,7 +395,7 @@ function Nav() {
             activeNavBarDiv === 'userMenuDiv' ? 'active' : ''
           }`}
           onClick={() => handleNavBarDivClick('userMenuDiv')}>
-          <img src={user_menu_image} alt="User-Image" id="userImage" />
+          <img src={user_menu_image} alt="User-Image" id="navUserImageLink" />
         </a>
         {/*User Menu Hidden Relative Div */}
         <div

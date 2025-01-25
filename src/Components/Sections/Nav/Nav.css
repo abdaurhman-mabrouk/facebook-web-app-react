@@ -1,12 +1,13 @@
 nav {
+  display: flex;
   min-width: 100%;
   max-width: 100%;
   width: 100%;
-  height: 50px;
-  min-height: 50px;
-  max-height: 50px;
+  height: 56px;
+  min-height: 56px;
+  max-height: 56px;
   padding: 0 15px;
-  display: flex;
+  margin: 0;
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
@@ -14,34 +15,36 @@ nav {
 }
 
 nav span {
-  display: inline;
-  max-height: 100%;
-  height: 100%;
+  display: flex !important;
+  max-height: 100% !important;
+  height: 100% !important;
   align-items: center;
-  vertical-align: middle;
-}
-
-nav span a {
-  display: inline !important;
   vertical-align: middle;
 }
 
 nav span.right {
-  display: flex;
+  display: flex !important;
   float: right;
+  width: 208px !important;
+  justify-content: space-between;
 }
 
 nav span.right a.navbar-icon-link {
-  width: fit-content;
-  height: fit-content;
-  padding: 10px;
-  margin-left: 5px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  align-items: center !important;
   background-color: #e4e6eb;
   border-radius: 100%;
-  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+
+nav span.right a.navbar-icon-link svg {
+  margin: auto !important;
+}
+
+nav span.right a.navbar-icon-link img#navUserImageLink {
 }
 
 nav span.right a.active {
@@ -311,58 +314,64 @@ div#messagesDiv {
 
 nav span.center {
   display: flex;
-  max-width: 40%;
-  width: 40%;
+  max-width: 518px;
+  width: 518px;
   height: 100%;
-  margin-right: 100px;
-  justify-content: space-evenly;
+  margin: auto !important;
+  justify-content: space-between;
   align-items: center;
 }
 
-nav span.center a {
+nav span.center a.nav-bar-center-link {
   display: flex;
   height: 90%;
-  width: 16%;
+  width: 20%;
+  align-items: center;
   vertical-align: middle;
   border-radius: 10px;
 }
 
-nav span.center a svg {
+nav span.center a.nav-bar-center-link svg {
   display: flex;
-  margin: 10% auto;
+  margin: auto;
 }
 
-nav span.center a:hover {
+nav span.center a.nav-bar-center-link:hover {
   background-color: #f0f2f5;
 }
 
-nav span.center a.active {
+nav span.center a.nav-bar-center-link.active {
   border-bottom: 4px solid #0866ff;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   color: #0866ff;
 }
 
-nav span.center a.active:hover {
+nav span.center a.nav-bar-center-link.active:hover {
   background-color: unset !important;
 }
 
-nav span.center a.active svg path {
+nav span.center a.nav-bar-center-link.active svg path {
   fill: #0866ff;
 }
 
 nav span.left {
+  display: block !important;
   float: left;
+  min-width: fit-content;
+  max-width: fit-content;
   width: fit-content;
+  margin: 0;
+  /* border: 1px solid #000; */
 }
 
 nav span.left div.left {
   display: flex;
-  width: fit-content;
+  width: 100% !important;
   height: 100%;
-  margin: 0 auto;
+  margin: 0;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 div#searchBarDiv {
@@ -468,6 +477,12 @@ img#facebookLogo {
 }
 
 @media (max-width: 768px) {
+  nav span.left {
+    margin-right: 20px;
+  }
+  nav span.right {
+    margin-left: 20px;
+  }
   nav span.center {
     display: none;
   }
@@ -484,7 +499,7 @@ img#facebookLogo {
 /* When ViewPort == 700px*/
 @media only screen and (max-width: 700px) {
   nav span.center {
-    display: none;
+    display: none !important;
   }
 }
 
