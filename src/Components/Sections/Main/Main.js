@@ -151,28 +151,59 @@ function Main() {
 
           <div id="createPostDiv">
             <div id="createPostTextDiv">
-              <img src={user_image} alt="" />
-              <input type="text" placeholder="What's in Your Mind ?" />
+              <img src={user_image} alt="" className="user-image" />
+              <input
+                type="text"
+                placeholder="What's in Your Mind ?"
+                className="create-post-text-input"
+              />
             </div>
 
             <hr />
 
             <div id="createPostAttachmentsDiv">
-              <a href=".">
+              <a href="." className="create-post-attachments-link">
                 <img src={colored_video_mark} alt="" />
               </a>
 
-              <a href=".">
+              <a href="." className="create-post-attachments-link">
                 <img src={colored_images_mark} alt="" />
               </a>
 
-              <a href=".">
+              <a href="." className="create-post-attachments-link">
                 <img src={colored_live_viedo_mark} alt="" />
               </a>
             </div>
           </div>
 
           <div id="reelsDiv">
+            <div id="reelsDivTitleDiv">
+              <i
+                dataVisualcompletion="css-img"
+                style={{
+                  backgroundImage:
+                    "url('https://static.xx.fbcdn.net/rsrc.php/v4/yo/r/GSImPvllXSB.png?_nc_eui2=AeGpYUc6XGkzsJU2ynXQUrAOqcRtBheNM2WpxG0GF40zZUCn6SlafZ-cl_PvwOIWk0O_6qrz1GiAnnWlblvHcNzn')",
+                  backgroundPosition: '0px 0px',
+                  backgroundSize: 'auto',
+                  width: '24px',
+                  height: '24px',
+                  backgroundRepeat: 'no-repeat',
+                  display: 'inline-block',
+                }}></i>
+              <p>Reels</p>
+              <a href="#">Create</a>
+              <a href="#">
+                <svg
+                  viewBox="0 0 20 20"
+                  width="20"
+                  height="20"
+                  fill="currentColor">
+                  <g fillRule="evenodd" transform="translate(-446 -350)">
+                    <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
             <div className="reel">
               <center>Reel</center>
             </div>

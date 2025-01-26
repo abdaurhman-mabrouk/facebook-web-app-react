@@ -4,42 +4,10 @@
 
 /* When ViewPort == 1100px */
 @media only screen and (max-width: 1100px) {
-  main#home {
-    justify-content: space-between;
-  }
-
-  main#home span.right {
-    display: none;
-  }
-
-  main#home span.center {
-    width: 60%;
-  }
-
-  main#home span.left {
-    max-width: 25%;
-    width: 25%;
-  }
 }
 
 /* When ViewPort == 900*/
 @media only screen and (max-width: 900px) {
-  body {
-    justify-content: center;
-    text-align: center;
-  }
-
-  main#home {
-    margin: auto;
-  }
-
-  main#home span.left {
-    display: none;
-  }
-
-  main#home span.center {
-    width: 90% !important;
-  }
 }
 
 @media (max-width: 768px) {
@@ -51,9 +19,6 @@
 
 /* When ViewPort == 500px*/
 @media only screen and (max-width: 500px) {
-  main#home span.center {
-    width: 100%;
-  }
 }
 
 @media (max-width: 480px) {
