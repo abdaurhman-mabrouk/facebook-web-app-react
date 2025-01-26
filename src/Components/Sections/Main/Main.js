@@ -27,8 +27,8 @@ function Main() {
     <>
       <main id="home">
         <span className="left">
-          <div className="">
-            <a href="." className="userLink">
+          <div className="span-left-main-links">
+            <a href="." className="userLink span-left-main-link">
               <img
                 src={user_image}
                 alt="User-Image"
@@ -38,46 +38,46 @@ function Main() {
               <p>Your Profile</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <img src={colored_friends_mark} alt="" /> <p>Friends</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <img src={colored_statistics_mark} alt="" />
               <p>Professional Dashboard</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <img src={colored_timeline_mark} alt="" />
               <p>Feed</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <img src={colored_groups_mark} alt="" />
               <p>Groups</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <img src={colored_marketplace_mark} alt="" />
               <p>MarketPlace</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <img src={colored_videos_mark} alt="" />
               <p>Videos</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <img src={colored_history_mark} alt="" />
               <p>Memories</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <img src={colored_save_mark} alt="" />
               <p>Saved</p>
             </a>
 
-            <a href=".">
+            <a href="." className="span-left-main-link">
               <span id="showMoreSpan">
                 <svg
                   viewBox="0 0 16 16"
@@ -94,17 +94,17 @@ function Main() {
               </span>
               <p>Show More</p>
             </a>
+          </div>
 
-            <hr />
+          <hr />
 
-            <div>
-              <h3>Your Shortcuts</h3>
+          <div className="span-left-shortcuts" id="spanLeftShortcutsDiv">
+            <h3>Your Shortcuts</h3>
 
-              <a href="." className="userLink">
-                <img src={user_image} alt="Page" className="userImg" />
-                <p>Page</p>
-              </a>
-            </div>
+            <a href="." className="userLink">
+              <img src={user_image} alt="Page" className="userImg" />
+              <p>Page</p>
+            </a>
           </div>
 
           <div id="mainLeftSpanFooter">
