@@ -17,7 +17,7 @@ import colored_live_viedo_mark from '../../../assets/images/colored-live-viedo-m
 import menu_mark from '../../../assets/images/menu-mark.png';
 import switch_user_image from '../../../assets/images/switch-user.png';
 import sponsor_mark from '../../../assets/images/sponsor-mark.png';
-import create_post_mark from '../../../assets/images/create-post-mark.png';
+import create_mark from '../../../assets/images/create-post-mark.png';
 import dark_search_mark from '../../../assets/images/dark-search-mark.png';
 import add_mark from '../../../assets/images/add-mark.png';
 import gift_mark from '../../../assets/images/gift-mark.png';
@@ -436,12 +436,10 @@ function Main() {
           </div>
         </span>
 
-        {/* <!-- unRelative Content --> */}
-        <div id="addPost">
-          <a href=".">
-            <img src={create_post_mark} alt="create Post" />
-          </a>
-        </div>
+        {/* <!-- UnRelative Content --> */}
+        <a href="#" id="createMessageLink">
+          <img src={create_mark} alt="create Message" />
+        </a>
       </main>
     </>
   );

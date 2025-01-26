@@ -2,26 +2,25 @@ main#home {
   display: flex;
   max-width: 100% !important;
   width: 100%;
+  min-height: 675px;
   max-height: calc(675px);
   height: 675px;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  justify-content: space-between !important;
   overflow-y: scroll;
-  overflow-x: hidden;
   background-color: #f2f4f7;
   /* border: 1px solid #000; */
 }
 
 main#home span {
-  margin: 0 auto;
 }
 
 main#home span.left {
-  float: left !important;
-  min-width: 25%;
-  max-width: 25%;
-  width: 25%;
+  /* float: left !important; */
+  min-width: 400px;
+  max-width: 400px;
+  width: 400px;
   min-height: 100%;
   max-height: 100%;
   height: 100%;
@@ -29,7 +28,7 @@ main#home span.left {
   padding: 0 0 5px 5px;
   overflow-y: scroll;
   background-color: #f2f4f7;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 main#home span.left div.span-left-main-links {
@@ -70,22 +69,75 @@ main#home span.left div a * {
 }
 
 main#home span.center {
-  max-width: 30%;
-  width: 30%;
+  max-width: 480px;
+  width: 480px;
   max-height: 100%;
   height: 100%;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  scrollbar-width: none;
   background-color: #f2f4f7;
+  /* border: 1px solid #000; */
+}
+
+main#home span.center div#storiesDiv {
+  display: flex;
+  width: 100%;
+  height: 220px;
+  margin: 10px 0;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  background-color: #f2f4f7;
+  /* border: 1px solid #000; */
+}
+
+main#home span.center div.story {
+  max-width: 24%;
+  width: 24%;
+  max-height: 95%;
+  height: 95%;
+  background-color: #fff;
+  border-radius: 10px;
   border: 1px solid #000;
 }
 
 main#home span.right {
-  float: right !important;
+  min-width: 25%;
+  max-width: 25%;
+  width: 25%;
+  min-height: 100%;
   max-height: 100%;
   height: 100%;
-  max-width: 30%;
-  width: 30%;
-  margin: auto;
+  margin: 0;
+  padding: 0 0;
+  overflow-y: scroll;
   background-color: #f2f4f7;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
+}
+
+a#createMessageLink {
+  display: flex;
+  position: fixed;
+  bottom: 15px;
+  right: 33px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  /* border: 1px solid #000; */
+}
+
+a#createMessageLink img {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
 }
