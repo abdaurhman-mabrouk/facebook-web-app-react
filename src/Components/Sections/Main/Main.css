@@ -201,6 +201,7 @@ div#createPostDiv
 }
 
 div#reelsDiv {
+  position: relative;
   max-width: 100%;
   width: 100%;
   max-height: 551px;
@@ -266,8 +267,14 @@ a.menu-link:hover {
 }
 
 a#createReelLink {
+  padding: 10px;
   font-weight: bold;
   color: #0e67c9;
+  border-radius: 5px;
+}
+
+a#createReelLink:hover {
+  background-color: #f2f4f7;
 }
 
 div#reelsDiv div#videosDiv {
@@ -280,12 +287,47 @@ div#reelsDiv div#videosDiv {
   /* border: 1px solid #000; */
 }
 
+a.videos-div-control-item {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 100%;
+  /* border: 1px solid #000; */
+}
+
+a#previousVideoLink {
+  left: 10px;
+  top: 50%;
+}
+
+a#nextVideoLink {
+  right: 10px;
+  top: 50%;
+}
+
+a.videos-div-control-item:hover {
+  background-color: #f2f2f2;
+}
+
+a.videos-div-control-item svg {
+  margin: 0;
+  padding: 0;
+}
+
 div.reel {
   min-width: 247px;
   width: 247px;
   min-height: 435px;
   height: 435px;
   margin: 3px 7px;
+  background-image: url('https://scontent.fcai21-2.fna.fbcdn.net/v/t39.30808-6/474922534_9259938020730048_792088652953113060_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=1&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeFrg5XlymgCz8Bz1_twYS4h4t5f_KTeJ3ri3l_8pN4nerN_A2gaChwpF-7nqXZWDZo9U9Ko6yffF5SxW6PvJxxC&_nc_ohc=lmm1PQVRQOIQ7kNvgFu3vgF&_nc_oc=AdhwufRDCOQxxrzdSB5_5fIZMEofKyvuaS39N-6WeVTKDW2l2kQVHv4B8H5qA6OXdxw&_nc_zt=23&_nc_ht=scontent.fcai21-2.fna&_nc_gid=Adaq60JDw7pFY8Tb1lFrjXW&oh=00_AYC_q85I3-9jQ89pRjA8uKuw1rJg1oxwdWxzcT-Uyg5iZg&oe=679D9C45');
   border-radius: 10px;
   border: 1px solid #000;
 }

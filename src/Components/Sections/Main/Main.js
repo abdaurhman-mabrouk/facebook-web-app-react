@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Main.css';
 
 // import needed images
@@ -23,6 +23,30 @@ import add_mark from '../../../assets/images/add-mark.png';
 import gift_mark from '../../../assets/images/gift-mark.png';
 
 function Main() {
+  //Reels Div Logic (Scrolling Right and Left onClicking on videos_control_items)
+  const [scrollDirection, setScrollDirection] = useState('');
+
+  useEffect(() => {
+    const reels_videos_div = document.getElementById('videosDiv');
+    if (scrollDirection === 'left') {
+      reels_videos_div.scrollBy({
+        left: -450, // Scroll Left by 450px
+      });
+    } else if (scrollDirection === 'right') {
+      reels_videos_div.scrollBy({
+        left: 450, // Scroll Left by 450px
+      });
+    }
+  }, [scrollDirection]);
+
+  const handleScrollLeft = () => {
+    setScrollDirection('left');
+  };
+
+  const handleScrollRight = () => {
+    setScrollDirection('right');
+  };
+
   return (
     <>
       <main id="home">
@@ -212,6 +236,20 @@ function Main() {
               </div>
             </div>
 
+            <a
+              href="#"
+              id="previousVideoLink"
+              className="videos-div-control-item"
+              onClick={handleScrollLeft}>
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="currentColor">
+                <path d="M14.791 5.207 8 12l6.793 6.793a1 1 0 1 1-1.415 1.414l-7.5-7.5a1 1 0 0 1 0-1.414l7.5-7.5a1 1 0 1 1 1.415 1.414z"></path>
+              </svg>
+            </a>
+
             <div id="videosDiv">
               <div className="reel">
                 <center>Reel</center>
@@ -225,6 +263,20 @@ function Main() {
                 <center>Reel</center>
               </div>
             </div>
+
+            <a
+              href="#"
+              id="nextVideoLink"
+              className="videos-div-control-item"
+              onClick={handleScrollRight}>
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="currentColor">
+                <path d="M9.209 5.207 16 12l-6.791 6.793a1 1 0 1 0 1.415 1.414l7.5-7.5a1 1 0 0 0 0-1.414l-7.5-7.5a1 1 0 1 0-1.415 1.414z"></path>
+              </svg>
+            </a>
 
             <div id="reelsFooterDiv">
               <a href="#">See More</a>
