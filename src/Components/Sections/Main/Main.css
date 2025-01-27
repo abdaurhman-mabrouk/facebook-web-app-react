@@ -8,7 +8,7 @@ main#home {
   margin: 0;
   padding: 0;
   justify-content: space-between !important;
-  overflow-y: scroll;
+  overflow-y: hidden;
   background-color: #f2f4f7;
   /* border: 1px solid #000; */
 }
@@ -36,6 +36,7 @@ main#home span.left {
 }
 
 main#home span.left div.span-left-main-links {
+  max-width: 100%;
   width: 100%;
   height: fit-content;
   margin: 0;
@@ -52,11 +53,12 @@ main#home span.left div.span-left-main-links a.span-left-main-link {
   max-width: 100%;
   width: 100%;
   height: 50px;
+  max-height: 50px;
   padding: 5px;
   margin-bottom: 5px;
   align-content: center;
   justify-content: left;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   border-radius: 5px;
 }
 
@@ -72,6 +74,49 @@ main#home span.left div a:hover {
 main#home span.left div a * {
   display: inline;
   vertical-align: middle !important;
+}
+
+main#home span.left div#spanLeftShortcutsDiv {
+  width: 100%;
+  min-height: 120px;
+  height: fit-content;
+  margin: 0;
+  /* border: 1px solid #000; */
+}
+
+main#home span.left div#spanLeftShortcutsDiv div.shortcuts-div-title-div {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #000; */
+}
+
+div#spanLeftShortcutsDiv div.shortcuts-div-title-div a#editShortcutsLink {
+  padding: 5px;
+  color: #0e67c9;
+  /* border: 1px solid #000; */
+}
+
+main#home span.left div#mainLeftSpanFooter {
+  display: inline-block;
+  width: 100%;
+  min-height: 70px;
+  height: fit-content;
+  align-items: center;
+  align-content: center;
+  /* border: 1px solid #000; */
+}
+
+main#home span.left div#mainLeftSpanFooter a.span-left-footer-link {
+  margin: 0 3px;
+  /* border: 1px solid #000; */
+}
+
+main#home span.left div#mainLeftSpanFooter a.span-left-footer-link:hover {
+  text-decoration: underline;
+  background-color: unset;
 }
 
 main#home span.center {
@@ -105,6 +150,7 @@ main#home span.center div.story {
   max-height: 95%;
   height: 95%;
   background-color: #fff;
+  background-image: url('https://scontent.fcai21-2.fna.fbcdn.net/v/t39.30808-6/475016935_1130090858572117_4336673196860303447_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=1&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE3yopoqnm9zmYFTGv0aR3xeiP6SYDm9ct6I_pJgOb1y0Jpg1SGyICriQEslHcyQxH9WyGf4nrd3xNxj-ooC8eS&_nc_ohc=xEdGKYZKf5wQ7kNvgGzGaTC&_nc_oc=AdicLf5XBGZKxIZ7IDd73HyhA5YwQXnibnvD9TTnjXqb9KqG4zLE2VQkYpCHq6TvZCE&_nc_zt=23&_nc_ht=scontent.fcai21-2.fna&_nc_gid=Au0mxhChcqYw3QywzAMUA5i&oh=00_AYDYWyOlGaVGfpxGybJe-iakwDPhwHtf6M518cfbcECUEQ&oe=679DBD13');
   border-radius: 10px;
   /* border: 1px solid #000; */
 }

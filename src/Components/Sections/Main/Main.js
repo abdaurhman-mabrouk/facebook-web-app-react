@@ -125,7 +125,12 @@ function Main() {
           <hr />
 
           <div className="span-left-shortcuts" id="spanLeftShortcutsDiv">
-            <h3>Your Shortcuts</h3>
+            <div className="shortcuts-div-title-div">
+              <h3>Your Shortcuts</h3>
+              <a href="#" id="editShortcutsLink">
+                Edit
+              </a>
+            </div>
 
             <a href="." className="userLink">
               <img src={user_image} alt="Page" className="userImg" />
@@ -134,9 +139,19 @@ function Main() {
           </div>
 
           <div id="mainLeftSpanFooter">
-            <a href=".">Privacy</a>.<a href=".">Terms</a>.
-            <a href=".">Advertising</a>.
-            <a href=".">
+            <a href="." className="span-left-footer-link">
+              Privacy
+            </a>
+            .
+            <a href="." className="span-left-footer-link">
+              Terms
+            </a>
+            .
+            <a href="." className="span-left-footer-link">
+              Advertising
+            </a>
+            .
+            <a href="." className="span-left-footer-link">
               Ad Choices
               <i
                 data-visualcompletion="css-img"
@@ -151,8 +166,19 @@ function Main() {
                   display: 'inline-block',
                 }}></i>
             </a>
-            .<a href=".">Cookies</a>.<a href=".">More</a>.
-            <a href=".">Meta © 2025</a>.
+            .
+            <a href="." className="span-left-footer-link">
+              Cookies
+            </a>
+            .
+            <a href="." className="span-left-footer-link">
+              More
+            </a>
+            .
+            <a href="." className="span-left-footer-link">
+              Meta © 2025
+            </a>
+            .
           </div>
         </span>
 
