@@ -32,10 +32,12 @@ function Main() {
       reels_videos_div.scrollBy({
         left: -450, // Scroll Left by 450px
       });
+      setScrollDirection('');
     } else if (scrollDirection === 'right') {
       reels_videos_div.scrollBy({
         left: 450, // Scroll Left by 450px
       });
+      setScrollDirection('');
     }
   }, [scrollDirection]);
 
@@ -251,6 +253,38 @@ function Main() {
             </a>
 
             <div id="videosDiv">
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
               <div className="reel">
                 <center>Reel</center>
               </div>
