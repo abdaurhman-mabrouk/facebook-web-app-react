@@ -178,42 +178,56 @@ function Main() {
 
           <div id="reelsDiv">
             <div id="reelsDivTitleDiv">
-              <i
-                dataVisualcompletion="css-img"
-                style={{
-                  backgroundImage:
-                    "url('https://static.xx.fbcdn.net/rsrc.php/v4/yo/r/GSImPvllXSB.png?_nc_eui2=AeGpYUc6XGkzsJU2ynXQUrAOqcRtBheNM2WpxG0GF40zZUCn6SlafZ-cl_PvwOIWk0O_6qrz1GiAnnWlblvHcNzn')",
-                  backgroundPosition: '0px 0px',
-                  backgroundSize: 'auto',
-                  width: '24px',
-                  height: '24px',
-                  backgroundRepeat: 'no-repeat',
-                  display: 'inline-block',
-                }}></i>
-              <p>Reels</p>
-              <a href="#">Create</a>
-              <a href="#">
-                <svg
-                  viewBox="0 0 20 20"
-                  width="20"
-                  height="20"
-                  fill="currentColor">
-                  <g fillRule="evenodd" transform="translate(-446 -350)">
-                    <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-            <div className="reel">
-              <center>Reel</center>
+              <div className="left">
+                <i
+                  dataVisualcompletion="css-img"
+                  style={{
+                    backgroundImage:
+                      "url('https://static.xx.fbcdn.net/rsrc.php/v4/yo/r/GSImPvllXSB.png?_nc_eui2=AeGpYUc6XGkzsJU2ynXQUrAOqcRtBheNM2WpxG0GF40zZUCn6SlafZ-cl_PvwOIWk0O_6qrz1GiAnnWlblvHcNzn')",
+                    backgroundPosition: '0px 0px',
+                    backgroundSize: 'auto',
+                    width: '24px',
+                    height: '24px',
+                    backgroundRepeat: 'no-repeat',
+                    display: 'inline-block',
+                  }}></i>
+                <p>Reels</p>
+              </div>
+
+              <div className="right">
+                <a href="#" id="createReelLink">
+                  Create
+                </a>
+                <a href="#" className="menu-link">
+                  <svg
+                    viewBox="0 0 20 20"
+                    width="20"
+                    height="20"
+                    fill="currentColor">
+                    <g fillRule="evenodd" transform="translate(-446 -350)">
+                      <path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <div className="reel">
-              <center>Reel</center>
+            <div id="videosDiv">
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
+
+              <div className="reel">
+                <center>Reel</center>
+              </div>
             </div>
 
-            <div className="reel">
-              <center>Reel</center>
+            <div id="reelsFooterDiv">
+              <a href="#">See More</a>
             </div>
           </div>
 
