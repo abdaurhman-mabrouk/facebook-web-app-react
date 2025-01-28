@@ -60,6 +60,7 @@ nav span.right a.active svg path {
 
 div#userMenuDiv {
   display: none;
+  z-index: 1;
   position: absolute;
   top: 50px;
   right: 25px;

@@ -132,8 +132,8 @@ function Main() {
               </a>
             </div>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="Page" className="userImg" />
+            <a href="." className="user-link">
+              <img src={user_image} alt="Page" className="user-image" />
               <p>Page</p>
             </a>
           </div>
@@ -497,23 +497,39 @@ function Main() {
         </span>
 
         <span className="right">
-          <div>
-            <h3>
-              Your Pages and Your Profiles
-              <img src={menu_mark} alt="" className="right" />
-            </h3>
+          <div className="pages-div">
+            <div className="pages-div-title-div">
+              <h3>
+                Your Pages and Your Profiles
+                <a href="#">
+                  <img
+                    src={menu_mark}
+                    alt="menu-mark "
+                    className="right-item"
+                  />
+                </a>
+              </h3>
+            </div>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="" className="userImg" /> Your Profile
-            </a>
+            <div className="pages-div-links-div">
+              <a href="." className="user-link">
+                <img src={user_image} alt="" className="user-image" /> Your
+                Profile
+              </a>
 
-            <a href=".">
-              <img src={switch_user_image} alt="" /> Switch To Page
-            </a>
+              <a href="." className="user-link">
+                <img
+                  src={switch_user_image}
+                  alt="Switch"
+                  className="user-image"
+                />
+                Switch To Page
+              </a>
 
-            <a href=".">
-              <img src={sponsor_mark} alt="" /> Create Sponsor
-            </a>
+              <a href=".">
+                <img src={sponsor_mark} alt="Sponsor" /> Create Sponsor
+              </a>
+            </div>
           </div>
 
           <hr />
@@ -534,57 +550,59 @@ function Main() {
               <img src={menu_mark} alt="" className="right" />
             </h3>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="" className="userImg" />
+            <a href="." className="user-link">
+              <img src={user_image} alt="" className="user-image" />
               <span>User</span>
             </a>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="" className="userImg" />
+            <a href="." className="user-link">
+              <img src={user_image} alt="" className="user-image" />
               <span>User</span>
             </a>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="" className="userImg" />
+            <a href="." className="user-link">
+              <img src={user_image} alt="" className="user-image" />
               <span>User</span>
             </a>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="" className="userImg" />
+            <a href="." className="user-link">
+              <img src={user_image} alt="" className="user-image" />
               <span>User</span>
             </a>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="" className="userImg" />
+            <a href="." className="user-link">
+              <img src={user_image} alt="" className="user-image" />
               <span>User</span>
             </a>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="" className="userImg" />
+            <a href="." className="user-link">
+              <img src={user_image} alt="" className="user-image" />
               <span>User</span>
             </a>
 
-            <a href="." className="userLink">
-              <img src={user_image} alt="" className="userImg" />
+            <a href="." className="user-link">
+              <img src={user_image} alt="" className="user-image" />
               <span>User</span>
             </a>
           </div>
 
           <hr />
 
-          <div>
-            <h3>Groups Conversations</h3>
+          <div className="groups-chats-div">
+            <div className="groups-chats-title-div">
+              <h3>Groups Conversations</h3>
+            </div>
 
-            <a href="." className="groupLink">
-              <img src={user_image} alt="" className="groupImg" /> Group
+            <a href="." className="group-link">
+              <img src={user_image} alt="" className="group-image" /> Group
             </a>
 
-            <a href="." className="groupLink">
-              <img src={user_image} alt="" className="groupImg" /> Group
+            <a href="." className="group-link">
+              <img src={user_image} alt="" className="group-image" /> Group
             </a>
 
-            <a href="." className="groupLink">
-              <img src={user_image} alt="" className="groupImg" /> Group
+            <a href="." className="group-link">
+              <img src={user_image} alt="" className="group-image" /> Group
             </a>
 
             <a href=".">

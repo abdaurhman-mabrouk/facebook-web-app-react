@@ -407,6 +407,7 @@ div#reelsFooterDiv a:hover {
 }
 
 main#home span.right {
+  display: block;
   min-width: 25%;
   max-width: 25%;
   width: 25%;
@@ -418,6 +419,77 @@ main#home span.right {
   overflow-y: scroll;
   background-color: #f2f4f7;
   /* border: 1px solid #000; */
+}
+
+img.group-image {
+  border-radius: 100%;
+}
+
+main#home span.right div {
+  display: block;
+}
+
+main#home span.right div a {
+  display: block;
+}
+
+main#home span.right div.pages-div {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000;
+}
+
+main#home span.right div.pages-div div.pages-div-title-div {
+  width: 100%;
+  height: 40px;
+  padding: 0 3px;
+  margin: 0;
+  align-content: center;
+  border: 1px solid #000;
+}
+
+main#home span.right div.pages-div div.pages-div-title-div a {
+  float: right;
+  width: 30px;
+  height: 30px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 100%;
+  /* border: 1px solid #000; */
+}
+
+main#home span.right div.pages-div div.pages-div-title-div a * {
+  margin: 0;
+}
+
+main#home span.right div.pages-div div.pages-div-title-div a:hover {
+  background-color: #e4e6e8;
+}
+
+main#home span.right div.pages-div div.pages-div-links-div {
+  width: 100%;
+  height: fit-content;
+  padding: 0 0 0 3px;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+main#home span.right div.pages-div div.pages-div-links-div a.user-link {
+  display: block;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  align-content: center;
+}
+
+main#home span.right div.pages-div div.pages-div-links-div a.user-link:hover {
+  background-color: #e4e6e8;
 }
 
 a#createMessageLink {
