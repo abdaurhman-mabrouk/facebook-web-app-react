@@ -345,12 +345,22 @@ function Main() {
 
           <div id="feedDiv">
             <div className="post">
-              <div className="post-details">
-                <img src={user_image} alt="User" className="post-user" />
-                <span className="post-details">
+              <div className="post-details top">
+                <div className="left">
+                  <a href="." className="publisher-image-link">
+                    <img
+                      src={user_image}
+                      alt="User"
+                      className="post-user user-image"
+                    />
+                  </a>
+                </div>
+
+                <div className="center">
                   <div className="publisher-name">
                     <a href=".">Publisher Name</a>
                   </div>
+
                   <div className="post-date">
                     <a href=".">januray 1 at 02:01 pm</a>.
                     <a href=".">
@@ -367,9 +377,9 @@ function Main() {
                       </svg>
                     </a>
                   </div>
-                </span>
+                </div>
 
-                <span className="post-control">
+                <div className="post-details-control right">
                   <a href=".">
                     <svg
                       viewBox="0 0 20 20"
@@ -391,21 +401,23 @@ function Main() {
                       <path d="M15.543 3.043a1 1 0 1 1 1.414 1.414L11.414 10l5.543 5.542a1 1 0 0 1-1.414 1.415L10 11.414l-5.543 5.543a1 1 0 0 1-1.414-1.415L8.586 10 3.043 4.457a1 1 0 1 1 1.414-1.414L10 8.586l5.543-5.543z"></path>
                     </svg>
                   </a>
-                </span>
+                </div>
               </div>
 
-              <div className="post-description">
-                The Text Area of The Post Description.
-              </div>
+              <div className="post-content middle">
+                <div className="post-description">
+                  The Text Area of The Post Description.
+                </div>
 
-              <div className="post-image">
-                <center>
-                  <img
-                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/472790544_1398800694859261_7919864601345637473_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEr1X4syEWQiJo_o3Eqzg1Lk852RfKxa52TznZF8rFrneQYNHmtCk3tTQ4nhRfErujpObqhKf6Qu45N-qoHJM4r&_nc_ohc=-MeOmU4vLe8Q7kNvgFlJF5l&_nc_oc=AditvMw91HGEzhDa0Brfaiq6PpVfT4bdYVJ68dI8krbInnYC1ZKIaGxIBgRb8pwNMHU&_nc_zt=23&_nc_ht=scontent.fcai21-3.fna&_nc_gid=ADox5949qkRCXynUYJiH7_0&oh=00_AYD3LOXooF3E1PjQMtefp325wFRuvpE-5jLTyhYNi4fQfw&oe=678DF7A3"
-                    alt="Post-Image"
-                    className="post-image"
-                  />
-                </center>
+                <div className="post-image">
+                  <center>
+                    <img
+                      src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/472790544_1398800694859261_7919864601345637473_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEr1X4syEWQiJo_o3Eqzg1Lk852RfKxa52TznZF8rFrneQYNHmtCk3tTQ4nhRfErujpObqhKf6Qu45N-qoHJM4r&_nc_ohc=-MeOmU4vLe8Q7kNvgFlJF5l&_nc_oc=AditvMw91HGEzhDa0Brfaiq6PpVfT4bdYVJ68dI8krbInnYC1ZKIaGxIBgRb8pwNMHU&_nc_zt=23&_nc_ht=scontent.fcai21-3.fna&_nc_gid=ADox5949qkRCXynUYJiH7_0&oh=00_AYD3LOXooF3E1PjQMtefp325wFRuvpE-5jLTyhYNi4fQfw&oe=678DF7A3"
+                      alt="Post-Image"
+                      className="post-image"
+                    />
+                  </center>
+                </div>
               </div>
 
               <div className="post-statics">
@@ -513,8 +525,8 @@ function Main() {
 
             <div className="pages-div-links-div">
               <a href="." className="user-link">
-                <img src={user_image} alt="" className="user-image" /> Your
-                Profile
+                <img src={user_image} alt="my profile" className="user-image" />{' '}
+                Your Profile
               </a>
 
               <a href="." className="user-link">
@@ -526,7 +538,7 @@ function Main() {
                 Switch To Page
               </a>
 
-              <a href=".">
+              <a href="." className="user-link">
                 <img src={sponsor_mark} alt="Sponsor" /> Create Sponsor
               </a>
             </div>

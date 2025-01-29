@@ -22,3 +22,7 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+hr {
+  background-color: #e2e5e9;
+}
