@@ -420,30 +420,67 @@ div#feedDiv div.post {
 div.post div.post-details {
   display: flex;
   width: 100%;
-  /* justify-content: space-between; */
+  max-width: 100%;
+  padding: 5px;
+  justify-content: space-between;
   border: 1px solid #000;
+}
+
+div.post div.post-details div.left-center-div {
+  display: flex;
+  width: 36%;
+  height: fit-content;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
 }
 
 div.post div.post-details div.left {
   display: flex;
   width: fit-content;
   max-width: fit-content;
-  border: 1px solid #000;
+  align-items: center;
+  align-content: center;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-details div.left a.publisher-image-link {
+  align-items: center;
+  align-content: center;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-details div.left a.publisher-image-link img.publisher-image {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #000; */
 }
 
 div.post div.post-details div.center {
   /* display: flex; */
   width: fit-content;
   max-width: fit-content;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 div.post div.post-details div.right {
-  display: flex;
+  display: flex !important;
   float: right;
-  width: fit-content;
-  max-width: fit-content;
-  border: 1px solid #000;
+  width: 8%;
+  max-width: 10%;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-details div.right a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+div.post div.post-details div.right a:hover {
+  background-color: #c1c1c1;
 }
 
 main#home span.right {
