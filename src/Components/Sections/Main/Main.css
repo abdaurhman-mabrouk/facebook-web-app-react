@@ -411,10 +411,12 @@ div#feedDiv div.post {
   max-width: 100%;
   height: fit-content;
   max-height: fit-content;
-  padding: 1px;
+  padding: 0;
+  margin: 10px 0;
   overflow: hidden;
+  background-color: #fff;
   border-radius: 10px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 div.post div.post-details {
@@ -425,7 +427,7 @@ div.post div.post-details {
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 div.post div.post-details div.left-center-div {
@@ -503,22 +505,141 @@ div.post
 div.post div.post-details div.right {
   display: flex !important;
   float: right;
-  width: 8%;
-  max-width: 10%;
+  width: 13%;
+  max-width: 13%;
+  height: 80% !important;
   align-items: center;
+  align-content: center;
   justify-content: space-between;
   /* border: 1px solid #000; */
 }
 
 div.post div.post-details div.right a {
-  display: block;
-  width: 30px;
-  height: 30px;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
   border-radius: 100%;
 }
 
 div.post div.post-details div.right a:hover {
   background-color: #c1c1c1;
+}
+
+div.post div.post-content {
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  align-content: center;
+  align-items: center;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-content div.post-description {
+  width: 100%;
+  height: fit-content;
+  padding: 3px 5px;
+  align-items: center;
+  align-content: center;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-content div.post-image {
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-content div.post-image img.post-image {
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+div.post div.post-statics {
+  display: flex;
+  width: 100%;
+  padding: 1px 15px;
+  margin: 0;
+  height: fit-content;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-statics div.post-statics-left {
+  width: fit-content;
+  height: fit-content;
+  align-content: center;
+  align-items: center;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-statics div.post-statics-left a:hover {
+  text-decoration: underline;
+}
+
+div.post div.post-statics div.post-statics-right {
+  display: flex;
+  width: 130px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-statics div.post-statics-right a {
+  display: flex;
+  width: fit-content;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-statics div.post-statics-right a:hover {
+  text-decoration: underline;
+}
+
+div.post hr {
+  width: 95%;
+  margin: 3px auto;
+}
+
+div.post div.post-reacts {
+  display: flex;
+  width: 100%;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  /* border: 1px solid #000; */
+}
+
+div.post div.post-reacts a {
+  display: flex;
+  width: 22%;
+  height: 80%;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+div.post div.post-reacts a:hover {
+  background-color: #e4e6e8;
 }
 
 main#home span.right {

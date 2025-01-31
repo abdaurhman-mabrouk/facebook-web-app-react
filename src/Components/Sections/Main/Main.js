@@ -422,34 +422,39 @@ function Main() {
                 </div>
 
                 <div className="post-image">
-                  <center>
-                    <img
-                      src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/475411097_1793301868109687_5887342723797899568_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=1&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeHIOQqczKdvTXtIPj1F4q_th4StIr2E19SHhK0ivYTX1M-ccz3kjkidgAJ7b_XpiFiMgqBhrE3_Y54uhe5PBFD3&_nc_ohc=1NVhb11BHcwQ7kNvgE-u6Rl&_nc_oc=AdglAxz4B5dKAmLsbZYj1WlEf37FkVq37846BRD3COARYfElS1prL32nR3a1Qvv5pQs&_nc_zt=23&_nc_ht=scontent.fcai21-3.fna&_nc_gid=AoHdAFQjIdmNllil1SNMprJ&oh=00_AYDtr_1rX2QyPvYb0yIunUIjmkT-GNwitU5o94l8zt61Cw&oe=67A2AD45"
-                      alt="Post-Image"
-                      className="post-image"
-                    />
-                  </center>
+                  <img
+                    src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/475411097_1793301868109687_5887342723797899568_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=1&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeHIOQqczKdvTXtIPj1F4q_th4StIr2E19SHhK0ivYTX1M-ccz3kjkidgAJ7b_XpiFiMgqBhrE3_Y54uhe5PBFD3&_nc_ohc=1NVhb11BHcwQ7kNvgE-u6Rl&_nc_oc=AdglAxz4B5dKAmLsbZYj1WlEf37FkVq37846BRD3COARYfElS1prL32nR3a1Qvv5pQs&_nc_zt=23&_nc_ht=scontent.fcai21-3.fna&_nc_gid=AoHdAFQjIdmNllil1SNMprJ&oh=00_AYDtr_1rX2QyPvYb0yIunUIjmkT-GNwitU5o94l8zt61Cw&oe=67A2AD45"
+                    alt="Post-Image"
+                    className="post-image"
+                  />
                 </div>
               </div>
 
               <div className="post-statics">
-                <span className="post-statics-left">
-                  <img
-                    height="18"
-                    role="presentation"
-                    width="18"
-                    src="data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg clip-path='url(%23clip0_15251_63610)'%3E%3Cpath d='M15.9963 8c0 4.4179-3.5811 7.9993-7.9986 7.9993-4.4176 0-7.9987-3.5814-7.9987-7.9992 0-4.4179 3.5811-7.9992 7.9987-7.9992 4.4175 0 7.9986 3.5813 7.9986 7.9992Z' fill='url(%23paint0_linear_15251_63610)'/%3E%3Cpath d='M15.9973 7.9992c0 4.4178-3.5811 7.9992-7.9987 7.9992C3.5811 15.9984 0 12.417 0 7.9992S3.5811 0 7.9986 0c4.4176 0 7.9987 3.5814 7.9987 7.9992Z' fill='url(%23paint1_radial_15251_63610)'/%3E%3Cpath d='M7.9996 5.9081c-.3528-.8845-1.1936-1.507-2.1748-1.507-1.4323 0-2.4254 1.328-2.4254 2.6797 0 2.2718 2.3938 4.0094 4.0816 5.1589.3168.2157.7205.2157 1.0373 0 1.6878-1.1495 4.0815-2.8871 4.0815-5.159 0-1.3517-.993-2.6796-2.4254-2.6796-.9811 0-1.822.6225-2.1748 1.507Z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CradialGradient id='paint1_radial_15251_63610' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(0 7.9992 -7.99863 0 7.9986 7.9992)'%3E%3Cstop offset='.5637' stop-color='%23E11731' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23E11731' stop-opacity='.1'/%3E%3C/radialGradient%3E%3ClinearGradient id='paint0_linear_15251_63610' x1='2.3986' y1='2.4007' x2='13.5975' y2='13.5993' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF74AE'/%3E%3Cstop offset='.5001' stop-color='%23FA2E3E'/%3E%3Cstop offset='1' stop-color='%23FF5758'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_15251_63610'%3E%3Cpath fill='%23fff' d='M-.001.0009h15.9992v15.9984H-.001z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E"
-                    alt=""
-                  />
-                </span>
+                <div className="post-statics-left">
+                  <a href="." className="post-reacts-count-link">
+                    <img
+                      height="18"
+                      role="presentation"
+                      width="18"
+                      src="data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg clip-path='url(%23clip0_15251_63610)'%3E%3Cpath d='M15.9963 8c0 4.4179-3.5811 7.9993-7.9986 7.9993-4.4176 0-7.9987-3.5814-7.9987-7.9992 0-4.4179 3.5811-7.9992 7.9987-7.9992 4.4175 0 7.9986 3.5813 7.9986 7.9992Z' fill='url(%23paint0_linear_15251_63610)'/%3E%3Cpath d='M15.9973 7.9992c0 4.4178-3.5811 7.9992-7.9987 7.9992C3.5811 15.9984 0 12.417 0 7.9992S3.5811 0 7.9986 0c4.4176 0 7.9987 3.5814 7.9987 7.9992Z' fill='url(%23paint1_radial_15251_63610)'/%3E%3Cpath d='M7.9996 5.9081c-.3528-.8845-1.1936-1.507-2.1748-1.507-1.4323 0-2.4254 1.328-2.4254 2.6797 0 2.2718 2.3938 4.0094 4.0816 5.1589.3168.2157.7205.2157 1.0373 0 1.6878-1.1495 4.0815-2.8871 4.0815-5.159 0-1.3517-.993-2.6796-2.4254-2.6796-.9811 0-1.822.6225-2.1748 1.507Z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CradialGradient id='paint1_radial_15251_63610' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(0 7.9992 -7.99863 0 7.9986 7.9992)'%3E%3Cstop offset='.5637' stop-color='%23E11731' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23E11731' stop-opacity='.1'/%3E%3C/radialGradient%3E%3ClinearGradient id='paint0_linear_15251_63610' x1='2.3986' y1='2.4007' x2='13.5975' y2='13.5993' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF74AE'/%3E%3Cstop offset='.5001' stop-color='%23FA2E3E'/%3E%3Cstop offset='1' stop-color='%23FF5758'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_15251_63610'%3E%3Cpath fill='%23fff' d='M-.001.0009h15.9992v15.9984H-.001z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E"
+                      alt=""
+                    />
+                  </a>
+                </div>
 
-                <span className="post-statics-right">
-                  <a href=".">1 Comment</a>
-                  <a href=".">1 Share</a>
-                </span>
+                <div className="post-statics-right">
+                  <a href="." className="post-comments-count-link">
+                    1 Comment
+                  </a>
+
+                  <a href="." className="post-shares-count-link">
+                    1 Share
+                  </a>
+                </div>
               </div>
 
-              <hr />
+              <hr className="bottom" />
 
               <div className="post-reacts">
                 <a href=".">
@@ -486,11 +491,11 @@ function Main() {
 
                 <a href=".">
                   <i
-                    data-visualcompletion="css-img"
+                    dataVisualcompletion="css-img"
                     style={{
                       backgroundImage:
-                        "url('https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeEkDYcN4q1wOEgt48oyGxiwYHlezEfsCP5geV7MR-wI_gJTaDCuRNWBcC6hDf9dFIR3e9dVOGlF6cFTXxFrYF1D')",
-                      backgroundPosition: '0px -588px',
+                        'url("https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeEkDYcN4q1wOEgt48oyGxiwYHlezEfsCP5geV7MR-wI_gJTaDCuRNWBcC6hDf9dFIR3e9dVOGlF6cFTXxFrYF1D")',
+                      backgroundPosition: '0px -441px',
                       backgroundSize: 'auto',
                       width: '20px',
                       height: '20px',
