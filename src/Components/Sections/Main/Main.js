@@ -359,17 +359,23 @@ function Main() {
 
                   <div className="center">
                     <div className="publisher-name">
-                      <a href=".">Publisher Name</a>
+                      <a href="." className="post-publisher-name-link">
+                        Publisher Name
+                      </a>
                     </div>
 
                     <div className="post-date">
-                      <a href=".">januray 1 at 02:01 pm</a>.
-                      <a href=".">
+                      <a href="." className="post-date-link">
+                        januray 1 at 02:01 pm
+                      </a>
+                      .
+                      <a href="." className="post-privacy-link">
                         <svg
                           viewBox="0 0 16 16"
                           width="12"
                           height="12"
                           fill="currentColor"
+                          className="post-privacy-svg"
                           title="Shared with Custom">
                           <title>Shared with Custom</title>
                           <g
@@ -383,7 +389,7 @@ function Main() {
                   </div>
                 </div>
 
-                <div className="post-details-control right">
+                <div className="right post-details-control">
                   <a href="." className="post-menu-control-item-link menu-mark">
                     <svg
                       viewBox="0 0 20 20"
@@ -410,7 +416,7 @@ function Main() {
                 </div>
               </div>
 
-              <div className="post-content middle">
+              <div className="middle post-content">
                 <div className="post-description">
                   The Text Area of The Post Description.
                 </div>
@@ -418,7 +424,7 @@ function Main() {
                 <div className="post-image">
                   <center>
                     <img
-                      src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/472790544_1398800694859261_7919864601345637473_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEr1X4syEWQiJo_o3Eqzg1Lk852RfKxa52TznZF8rFrneQYNHmtCk3tTQ4nhRfErujpObqhKf6Qu45N-qoHJM4r&_nc_ohc=-MeOmU4vLe8Q7kNvgFlJF5l&_nc_oc=AditvMw91HGEzhDa0Brfaiq6PpVfT4bdYVJ68dI8krbInnYC1ZKIaGxIBgRb8pwNMHU&_nc_zt=23&_nc_ht=scontent.fcai21-3.fna&_nc_gid=ADox5949qkRCXynUYJiH7_0&oh=00_AYD3LOXooF3E1PjQMtefp325wFRuvpE-5jLTyhYNi4fQfw&oe=678DF7A3"
+                      src="https://scontent.fcai21-3.fna.fbcdn.net/v/t39.30808-6/475411097_1793301868109687_5887342723797899568_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=1&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeHIOQqczKdvTXtIPj1F4q_th4StIr2E19SHhK0ivYTX1M-ccz3kjkidgAJ7b_XpiFiMgqBhrE3_Y54uhe5PBFD3&_nc_ohc=1NVhb11BHcwQ7kNvgE-u6Rl&_nc_oc=AdglAxz4B5dKAmLsbZYj1WlEf37FkVq37846BRD3COARYfElS1prL32nR3a1Qvv5pQs&_nc_zt=23&_nc_ht=scontent.fcai21-3.fna&_nc_gid=AoHdAFQjIdmNllil1SNMprJ&oh=00_AYDtr_1rX2QyPvYb0yIunUIjmkT-GNwitU5o94l8zt61Cw&oe=67A2AD45"
                       alt="Post-Image"
                       className="post-image"
                     />

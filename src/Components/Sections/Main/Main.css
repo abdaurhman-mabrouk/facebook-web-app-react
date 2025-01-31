@@ -422,6 +422,8 @@ div.post div.post-details {
   width: 100%;
   max-width: 100%;
   padding: 5px;
+  align-items: center;
+  align-content: center;
   justify-content: space-between;
   border: 1px solid #000;
 }
@@ -431,10 +433,12 @@ div.post div.post-details div.left-center-div {
   width: 36%;
   height: fit-content;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   /* border: 1px solid #000; */
 }
 
-div.post div.post-details div.left {
+div.post div.post-details div.left-center-div div.left {
   display: flex;
   width: fit-content;
   max-width: fit-content;
@@ -443,7 +447,7 @@ div.post div.post-details div.left {
   /* border: 1px solid #000; */
 }
 
-div.post div.post-details div.left a.publisher-image-link {
+div.post div.post-details div.left-center-div div.left a.publisher-image-link {
   align-items: center;
   align-content: center;
   /* border: 1px solid #000; */
@@ -455,11 +459,45 @@ div.post div.post-details div.left a.publisher-image-link img.publisher-image {
   /* border: 1px solid #000; */
 }
 
-div.post div.post-details div.center {
+div.post div.post-details div.left-center-div div.center {
   /* display: flex; */
   width: fit-content;
   max-width: fit-content;
+  align-items: center;
+  align-content: center;
   /* border: 1px solid #000; */
+}
+
+div.post div.post-details div.left-center-div div.center div.publisher-name {
+  align-items: center;
+  align-content: center;
+}
+
+div.post
+  div.post-details
+  div.left-center-div
+  div.center
+  div.publisher-name
+  a.post-publisher-name-link {
+  align-items: center;
+  align-content: center;
+}
+
+div.post div.post-details div.left-center-div div.center div.post-date {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  align-content: center;
+}
+
+div.post
+  div.post-details
+  div.left-center-div
+  div.center
+  div.post-date
+  a.post-date-link {
+  align-items: center;
+  align-content: center;
 }
 
 div.post div.post-details div.right {
