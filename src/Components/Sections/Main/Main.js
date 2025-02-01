@@ -127,7 +127,7 @@ function Main() {
           <div className="span-left-shortcuts" id="spanLeftShortcutsDiv">
             <div className="shortcuts-div-title-div">
               <h3>Your Shortcuts</h3>
-              <a href="#" id="editShortcutsLink">
+              <a href="." id="editShortcutsLink">
                 Edit
               </a>
             </div>
@@ -247,10 +247,10 @@ function Main() {
               </div>
 
               <div className="right">
-                <a href="#" id="createReelLink">
+                <a href="." id="createReelLink">
                   Create
                 </a>
-                <a href="#" className="menu-link">
+                <a href="." className="menu-link">
                   <svg
                     viewBox="0 0 20 20"
                     width="20"
@@ -339,7 +339,7 @@ function Main() {
             </a>
 
             <div id="reelsFooterDiv">
-              <a href="#">See More</a>
+              <a href=".">See More</a>
             </div>
           </div>
 
@@ -530,7 +530,7 @@ function Main() {
             <div className="pages-div-title-div">
               <h3>
                 Your Pages and Your Profiles
-                <a href="#">
+                <a href=".">
                   <img
                     src={menu_mark}
                     alt="menu-mark "
@@ -641,7 +641,7 @@ function Main() {
         </span>
 
         {/* <!-- UnRelative Content --> */}
-        <a href="#" id="createMessageLink">
+        <a href="." id="createMessageLink">
           <img src={create_mark} alt="create Message" />
         </a>
       </main>
