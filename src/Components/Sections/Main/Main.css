@@ -615,7 +615,7 @@ div.post div.post-statics div.post-statics-right a:hover {
 
 div.post hr {
   width: 95%;
-  margin: 3px auto;
+  margin: 5px auto;
 }
 
 div.post div.post-reacts {
@@ -642,6 +642,64 @@ div.post div.post-reacts a {
 
 div.post div.post-reacts a:hover {
   background-color: #e4e6e8;
+}
+
+div.post div.post-comments-div {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid #000;
+}
+
+div.post div.post-comments-div a {
+  color: #000;
+}
+
+div.post div.post-comments-div div.post-comments-content-div {
+  display: flex;
+  width: 85%;
+  height: fit-content;
+  /* min-height: fit-content; */
+  /* max-height: fit-content; */
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+div.post div.post-comments-div div.post-comments-content-div div.comment {
+  display: flex;
+  width: fit-content;
+  height: 50px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  border: 1px solid #000;
+}
+
+div.post
+  div.post-comments-div
+  div.post-comments-content-div
+  div.comment
+  img.commenter-user-image {
+  margin: 0 5px;
+}
+
+div.post
+  div.post-comments-div
+  div.post-comments-content-div
+  div.comment
+  p.comment-text {
+  display: flex;
+  width: fit-content;
+  height: 80%;
+  padding: 2px 5px;
+  margin: 0 5px;
+  align-items: center;
+  align-content: center;
+  background-color: #c1c1c1;
+  border-radius: 50px;
+}
+
+div.post div.post-comments-div a:hover {
+  text-decoration: underline;
 }
 
 main#home span.right {

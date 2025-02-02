@@ -522,13 +522,10 @@ function Main() {
                 </a>
               </div>
 
+              <hr className="bottom" />
+
               <div className="post-comments-div">
-                <div className="post-create-comment-div">
-                  <a href=".">
-                    <img src={user_image} alt="commenter" />
-                  </a>
-                  <input type="text" className="post-create-comment-input" />
-                </div>
+                <a href=".">View more comments</a>
 
                 <div className="post-comments-content-div">
                   <div className="post-comment comment">
@@ -536,11 +533,22 @@ function Main() {
                       <img
                         src={user_image}
                         alt="commenter"
-                        className="commenter-user-image"
+                        className="commenter-user-image user-image"
                       />
                     </a>
-                    <p>a Comment.</p>
+                    <p className="comment-text">a Comment.</p>
                   </div>
+                </div>
+
+                <div className="post-create-comment-div">
+                  <a href=".">
+                    <img
+                      src={user_image}
+                      alt="commenter"
+                      className="user-image"
+                    />
+                  </a>
+                  <input type="text" className="post-create-comment-input" />
                 </div>
               </div>
             </div>
