@@ -456,7 +456,7 @@ function Main() {
 
               <hr className="bottom" />
 
-              <div className="post-reacts">
+              <div className="post-reacts bottom">
                 <a href=".">
                   <i
                     data-visualcompletion="css-img"
@@ -520,6 +520,28 @@ function Main() {
                     }}></i>
                   Share
                 </a>
+              </div>
+
+              <div className="post-comments-div">
+                <div className="post-create-comment-div">
+                  <a href=".">
+                    <img src={user_image} alt="commenter" />
+                  </a>
+                  <input type="text" className="post-create-comment-input" />
+                </div>
+
+                <div className="post-comments-content-div">
+                  <div className="post-comment comment">
+                    <a href=".">
+                      <img
+                        src={user_image}
+                        alt="commenter"
+                        className="commenter-user-image"
+                      />
+                    </a>
+                    <p>a Comment.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
