@@ -548,7 +548,11 @@ function Main() {
                       className="user-image"
                     />
                   </a>
-                  <input type="text" className="post-create-comment-input" />
+                  <input
+                    type="text"
+                    placeholder="Comment as Abdaurhman Mabrouk"
+                    className="post-create-comment-input"
+                  />
                 </div>
               </div>
             </div>
