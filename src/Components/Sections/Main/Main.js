@@ -525,7 +525,11 @@ function Main() {
               <hr className="bottom" />
 
               <div className="post-comments-div">
-                <a href=".">View more comments</a>
+                <div className="post-comments-title-div">
+                  <a href="." className="view-more-comments-link">
+                    View more comments
+                  </a>
+                </div>
 
                 <div className="post-comments-content-div">
                   <div className="post-comment comment">
@@ -545,7 +549,7 @@ function Main() {
                     <img
                       src={user_image}
                       alt="commenter"
-                      className="user-image"
+                      className="user-image create-post-user-image"
                     />
                   </a>
                   <input

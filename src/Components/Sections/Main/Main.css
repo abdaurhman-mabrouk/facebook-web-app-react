@@ -647,13 +647,31 @@ div.post div.post-reacts a:hover {
 div.post div.post-comments-div {
   width: 100%;
   height: fit-content;
-  /* justify-content: center; */
-  /* text-align: center; */
+  justify-content: center;
+  text-align: center;
   border: 1px solid #000;
 }
 
-div.post div.post-comments-div a {
+div.post div.post-comments-div div.post-comments-title-div {
+  display: flex;
+  width: 95%;
+  height: fit-content;
+  margin: 0 auto;
+  /* border: 1px solid #000; */
+}
+
+div.post
+  div.post-comments-div
+  div.post-comments-title-div
+  a.view-more-comments-link {
   color: #000;
+}
+
+div.post
+  div.post-comments-div
+  div.post-comments-title-div
+  a.view-more-comments-link:hover {
+  text-decoration: underline;
 }
 
 div.post div.post-comments-div div.post-comments-content-div {
@@ -682,6 +700,8 @@ div.post
   div.post-comments-content-div
   div.comment
   img.commenter-user-image {
+  width: 30px;
+  height: 30px;
   margin: 0 5px;
 }
 
@@ -692,7 +712,7 @@ div.post
   p.comment-text {
   display: flex;
   width: fit-content;
-  height: 80%;
+  height: 70%;
   padding: 2px 5px;
   margin: 0 5px;
   align-items: center;
@@ -716,6 +736,14 @@ div.post div.post-comments-div div.post-create-comment-div {
 div.post
   div.post-comments-div
   div.post-create-comment-div
+  img.create-post-user-image {
+  width: 30px;
+  height: 30px;
+}
+
+div.post
+  div.post-comments-div
+  div.post-create-comment-div
   input.post-create-comment-input {
   width: 85%;
   height: 80%;
@@ -732,10 +760,6 @@ div.post
   input.post-create-comment-input:focus {
   outline: none;
   border: none;
-}
-
-div.post div.post-comments-div a:hover {
-  text-decoration: underline;
 }
 
 main#home span.right {
