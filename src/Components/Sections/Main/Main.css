@@ -679,10 +679,10 @@ div.post div.post-comments-div div.post-comments-content-div {
   height: fit-content;
   min-height: 70px;
   max-height: fit-content;
-  margin: 30px auto;
+  margin: 10px auto;
   align-items: center;
   align-content: center;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 div.post div.post-comments-div div.post-comments-content-div div.comment {
@@ -692,7 +692,7 @@ div.post div.post-comments-div div.post-comments-content-div div.comment {
   align-items: center;
   align-content: center;
   justify-content: space-evenly;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 div.post
@@ -730,7 +730,7 @@ div.post div.post-comments-div div.post-create-comment-div {
   align-content: center;
   justify-content: space-evenly;
   overflow: hidden;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 div.post
