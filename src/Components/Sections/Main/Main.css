@@ -135,18 +135,21 @@ main#home span.center {
 main#home span.center div#storiesDiv {
   display: flex;
   width: 100%;
+  max-width: 100%;
   height: 220px;
   margin: 10px 0;
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
   background-color: #f2f4f7;
   /* border: 1px solid #000; */
 }
 
 main#home span.center div.story {
-  max-width: 24%;
-  width: 24%;
+  display: flex;
+  width: 150px !important;
   max-height: 95%;
   height: 95%;
   background-color: #fff;
@@ -633,7 +636,7 @@ div.post div.post-reacts {
 div.post div.post-reacts a {
   display: flex;
   width: 22%;
-  height: 80%;
+  height: 88%;
   align-items: center;
   align-content: center;
   justify-content: space-evenly;
@@ -647,29 +650,21 @@ div.post div.post-reacts a:hover {
 div.post div.post-comments-div {
   width: 100%;
   height: fit-content;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid #000;
-}
-
-div.post div.post-comments-div div.post-comments-title-div {
-  display: flex;
-  width: 95%;
-  height: fit-content;
-  margin: 0 auto;
+  justify-content: left;
+  text-align: left;
   /* border: 1px solid #000; */
 }
 
 div.post
   div.post-comments-div
-  div.post-comments-title-div
+  div.post-comments-content-div
   a.view-more-comments-link {
   color: #000;
 }
 
 div.post
   div.post-comments-div
-  div.post-comments-title-div
+  div.post-comments-content-div
   a.view-more-comments-link:hover {
   text-decoration: underline;
 }
@@ -713,7 +708,7 @@ div.post
   display: flex;
   width: fit-content;
   height: 70%;
-  padding: 2px 5px;
+  padding: 5px 5px;
   margin: 0 5px;
   align-items: center;
   align-content: center;

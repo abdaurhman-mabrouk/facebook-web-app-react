@@ -199,6 +199,34 @@ function Main() {
             <div className="story">
               <center>Story</center>
             </div>
+
+            <div className="story">
+              <center>Story</center>
+            </div>
+
+            <div className="story">
+              <center>Story</center>
+            </div>
+
+            <div className="story">
+              <center>Story</center>
+            </div>
+
+            <div className="story">
+              <center>Story</center>
+            </div>
+
+            <div className="story">
+              <center>Story</center>
+            </div>
+
+            <div className="story">
+              <center>Story</center>
+            </div>
+
+            <div className="story">
+              <center>Story</center>
+            </div>
           </div>
 
           <div id="createPostDiv">
@@ -525,13 +553,10 @@ function Main() {
               <hr className="bottom" />
 
               <div className="post-comments-div">
-                <div className="post-comments-title-div">
+                <div className="post-comments-content-div">
                   <a href="." className="view-more-comments-link">
                     View more comments
                   </a>
-                </div>
-
-                <div className="post-comments-content-div">
                   <div className="post-comment comment">
                     <a href=".">
                       <img
@@ -540,7 +565,35 @@ function Main() {
                         className="commenter-user-image user-image"
                       />
                     </a>
-                    <p className="comment-text">a Comment.</p>
+                    <p className="comment-text">
+                      <h4>UserName </h4>a Comment.
+                    </p>
+                  </div>
+
+                  <div className="post-comment comment">
+                    <a href=".">
+                      <img
+                        src={user_image}
+                        alt="commenter"
+                        className="commenter-user-image user-image"
+                      />
+                    </a>
+                    <p className="comment-text">
+                      <h4>UserName </h4>a Comment.
+                    </p>
+                  </div>
+
+                  <div className="post-comment comment">
+                    <a href=".">
+                      <img
+                        src={user_image}
+                        alt="commenter"
+                        className="commenter-user-image user-image"
+                      />
+                    </a>
+                    <p className="comment-text">
+                      <h4>UserName </h4>a Comment.
+                    </p>
                   </div>
                 </div>
 
